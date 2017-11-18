@@ -1,0 +1,8 @@
+.wrapper{
+  max-width: 1236px;
+  padding-left: 18px;
+  padding-right: 18px;
+  overflow: hidden;
+  margin: auto;
+  text-align: center;
+}
