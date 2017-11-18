@@ -1,0 +1,68 @@
+.about{
+  padding-top: 25px;
+  position: relative;
+  background-color: black;
+  height: auto;
+  padding-bottom: 60px;
+  border-bottom: 7px solid $orange;
+
+&__content{
+
+}
+&__photo{
+
+
+  width: 100%;
+
+
+  img{
+    opacity: 0.39;
+    border: 3px solid $orange;
+    border-radius: 15%;
+    width: 50%;
+    height: auto;
+    display: none;
+    @mixin atMedium{
+      display: block;
+      width: 100%;
+    }
+  }
+}
+&__text{
+  @mixin atMedium{
+
+    margin-top: -50px;
+  }
+  @mixin atLarge{
+    /*margin-top: -20px;*/
+  }
+
+}
+&__title{
+  text-align: center;
+  color: $orange;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  @mixin atSmall{
+
+    font-size: 2rem;
+  }
+}
+&__description{
+
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  @mixin atSmall{
+    font-size: 1.5rem;
+  }
+  @mixin atMedium{
+    /*margin-top: 50px;*/
+    text-align: left;
+  }
+  @mixin atLarge{
+    margin-top: 50px;
+  }
+}
+
+}

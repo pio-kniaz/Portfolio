@@ -466,6 +466,7 @@ img{
 }
 
 .wrapper{
+
   max-width: 1236px;
   padding-left: 18px;
   padding-right: 18px;
@@ -475,8 +476,7 @@ img{
 }
 
 .video{
-position: absolute;
-top: 0;
+
 border-bottom: 7px solid #ff641af2;
 }
 
@@ -491,18 +491,15 @@ border-bottom: 7px solid #ff641af2;
     overflow: hidden;
     opacity: 0.2;
     max-width: 100%;
-
-
-
   }
 
 .video__content{
   max-width: 300px;
   position: absolute;
-  top:25%;
   left: 10%;
-  -webkit-transform: translate(-25%);
-          transform: translate(-25%);
+  top:15%;
+  -webkit-transform: translate(-20%,-15%);
+          transform: translate(-20%,-15%);
 }
 
 @media (min-width:530px) {
@@ -723,3 +720,128 @@ border-bottom: 7px solid #ff641af2;
         -webkit-transform:rotate(-45deg) scaleX(1.25) translateY(1px);
                 transform:rotate(-45deg) scaleX(1.25) translateY(1px);
       }
+
+.about{
+  padding-top: 25px;
+  position: relative;
+  background-color: black;
+  height: auto;
+  padding-bottom: 60px;
+  border-bottom: 7px solid #ff641af2;
+
+}
+
+.about__content{
+
+}
+
+.about__photo{
+
+
+  width: 100%;
+}
+
+.about__photo img{
+    opacity: 0.39;
+    border: 3px solid #ff641af2;
+    border-radius: 15%;
+    width: 50%;
+    height: auto;
+    display: none;
+  }
+
+@media (min-width: 800px){
+
+.about__photo img{
+      display: block;
+      width: 100%
+  }
+  }
+
+@media (min-width: 800px){
+
+.about__text{
+
+    margin-top: -50px
+
+}
+  }
+
+@media(min-width: 1010px){
+
+.about__text{
+    /*margin-top: -20px;*/
+
+}
+  }
+
+.about__title{
+  text-align: center;
+  color: #ff641af2;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+@media (min-width:530px) {
+
+.about__title{
+
+    font-size: 2rem
+}
+  }
+
+.about__description{
+
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+}
+
+@media (min-width:530px) {
+
+.about__description{
+    font-size: 1.5rem
+}
+  }
+
+@media (min-width: 800px){
+
+.about__description{
+    /*margin-top: 50px;*/
+    text-align: left
+}
+  }
+
+@media(min-width: 1010px){
+
+.about__description{
+    margin-top: 50px
+}
+  }
+
+.row::after{
+        content:"";
+        clear: both;
+        display: table;
+      }
+
+.row--gutters{
+    margin-right: -65px;
+  }
+
+.row--gutters >div{
+    padding-right: 65px;
+  }
+
+@media (min-width: 800px){
+
+    .row__medium-4{
+      float: left;
+      width: 33.33%;
+    }
+
+    .row__medium-8{
+      float: left;
+      width: 66.66%;
+    }
+  }

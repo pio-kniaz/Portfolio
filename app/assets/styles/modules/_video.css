@@ -1,6 +1,5 @@
 .video{
-position: absolute;
-top: 0;
+
 border-bottom: 7px solid $orange;
 &__box{
   max-height: 86vh;
@@ -12,17 +11,14 @@ border-bottom: 7px solid $orange;
     overflow: hidden;
     opacity: 0.2;
     max-width: 100%;
-
-
-
   }
 }
 &__content{
   max-width: 300px;
   position: absolute;
-  top:25%;
   left: 10%;
-  transform: translate(-25%);
+  top:15%;
+  transform: translate(-20%,-15%);
 
   @mixin atSmall{
     top:30%;
