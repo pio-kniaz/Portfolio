@@ -1,4 +1,5 @@
 .video{
+  overflow: hidden;
 
 border-bottom: 7px solid $orange;
 &__box{

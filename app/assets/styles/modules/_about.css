@@ -3,7 +3,7 @@
   position: relative;
   background-color: black;
   height: auto;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
   border-bottom: 7px solid $orange;
 
 &__content{

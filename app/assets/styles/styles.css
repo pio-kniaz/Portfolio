@@ -1,4 +1,5 @@
 @import "normalize.css";
+@import "font-awesome";
 @import "modules/base/_variables";
 @import "modules/base/_global";
 @import "modules/base/_mixins";
@@ -8,3 +9,4 @@
 @import "modules/_header";
 @import "modules/_about";
 @import "modules/_row";
+@import "modules/_projects";

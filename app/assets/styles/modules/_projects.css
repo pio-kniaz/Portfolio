@@ -1,0 +1,124 @@
+.projects {
+  background-image: url("../../assets/images/bg-works3.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+
+  &__inner{
+  padding-bottom: 100px;
+  background-color: rgba(0, 0, 0, 0.7098039215686275);
+
+  }
+  &__arrow-box{
+    position: relative;
+    max-width: 1236px;
+    margin: auto;
+  }
+  &__left-arrow{
+    position: absolute;
+    font-size: 3rem;
+    top: 270px;
+    left:20px;
+    color: $orange;
+    transition: all 0.5s linear;
+
+  }
+  &__right-arrow{
+    position: absolute;
+    font-size: 3rem;
+    top: 270px;
+    right: 20px;
+    color: $orange;
+    transition: all 0.5s linear;
+  }
+  &__right-arrow:hover{
+    transform: scale(1.2);
+    color: black;
+    transition: all 0.5s linear;
+  }
+  &__left-arrow:hover{
+    transform: scale(1.2);
+    color: black;
+    transition: all 0.5s linear;
+  }
+
+
+
+  &__title {
+    padding-top: 50px;
+    text-align: center;
+    margin-top: 0;
+    color: white;
+    font-size: 2rem;
+    max-width: 1236px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__box-title{
+    color: white;
+    font-size: 1.2rem;
+  }
+  &__img{
+    width: 90%;
+    margin: auto;
+    opacity: 0.8;
+    @mixin atSmall{
+      max-width: 60%;
+      @mixin atMedium{
+
+
+        &--scale{
+          margin-top: -100px;
+          transform: scaleY(0.7);
+          transition: all 5s linear;
+        }
+      }
+    }
+  }
+  &__button{
+    opacity: 0.8;
+    border-radius: 5px;
+    padding: 10px;
+    width: 49%;
+    display: inline-block;
+    background-color: white;
+    a{
+      text-decoration: none;
+      color: black;
+    }
+  }
+  &__button:hover{
+    opacity: 1;
+    transform: scale(1.04);
+  }
+  &--hidden{
+    @mixin atMedium{
+      display: none;
+
+      opacity: 0;
+    }
+  }
+  &--active{
+    display: block;
+    opacity: 1;
+    transition: all 1s linear;
+  }
+}
+.projects__subtitle{
+  span{
+    display: inline-block;
+    padding: 10px 0;
+    width: 25%;
+    margin: 0 auto 15px;
+    background: white;
+    font-weight: bolder;
+  }
+}
+.projects__description{
+  padding-top: 25px;
+  color: white;
+  max-width: 370px;
+  margin: auto;
+}
