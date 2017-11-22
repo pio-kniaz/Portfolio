@@ -1,4 +1,9 @@
+
 .contact{
+
+  display: block;
+  visibility: visible;
+  z-index: 100;
   border-top: 7px solid $orange;
   background: black;
   min-height: 350px;
@@ -22,6 +27,26 @@
     padding: 15px;
     text-decoration: none;
     color: white;
-    font-size: 2rem;
+    font-size: 2.2rem;
+    transform: scale(1);
+    display: inline-block;
+      transition: all .3s linear;
   }
+  &__icon:hover{
+    transition: all .3s linear;
+    color: $orange;
+    transform: scale(1.2);
+  }
+  &__mail{
+    color: #fff;
+    font-size: 1.5rem;
+    position: relative;
+    transition: all .3s linear;
+  }
+  &__mail:hover{
+    color: $orange;
+    transition: all .3s linear;
+    transform: scale(1.2);
+  }
+
 }

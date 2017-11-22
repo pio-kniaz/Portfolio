@@ -15,11 +15,11 @@ border-bottom: 7px solid $orange;
   }
 }
 &__content{
-  max-width: 300px;
+  max-width: 265px;
   position: absolute;
   left: 10%;
   top:15%;
-  transform: translate(-20%,-15%);
+  transform: translate(-15%,-15%);
 
   @mixin atSmall{
     top:30%;

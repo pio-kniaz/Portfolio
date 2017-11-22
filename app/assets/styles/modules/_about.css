@@ -1,6 +1,6 @@
 .about{
   padding-top: 25px;
-  position: relative;
+
   background-color: black;
   height: auto;
   padding-bottom: 80px;
@@ -10,21 +10,16 @@
 
 }
 &__photo{
-
-
+  opacity: 0.65;
   width: 100%;
-
-
   img{
-    opacity: 0.39;
-    border: 3px solid $orange;
-    border-radius: 15%;
+    border: 8px solid white;
     width: 50%;
-    height: auto;
     display: none;
     @mixin atMedium{
       display: block;
       width: 100%;
+      height: auto;
     }
   }
 }
@@ -40,12 +35,16 @@
 }
 &__title{
   text-align: center;
-  color: $orange;
+  color: #fff;
   font-size: 1.2rem;
   margin-bottom: 20px;
   @mixin atSmall{
-
+    margin-bottom: 40px;
     font-size: 2rem;
+  }
+  @mixin atMedium{
+    text-align: left;
+
   }
 }
 &__description{

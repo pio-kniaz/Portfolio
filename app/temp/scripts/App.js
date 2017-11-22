@@ -10342,6 +10342,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var mobileMenu = new _MobileMenu2.default();
 var projectsCarusele = new _ProjectsCarusele2.default();
+// var location = new location();
 
 /***/ }),
 /* 2 */
