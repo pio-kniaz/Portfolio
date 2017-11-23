@@ -1,0 +1,41 @@
+.skills{
+
+  border-top: 7px solid $orange;
+  padding: 25px 0;
+  margin: auto;
+  @mixin atSmall{
+    padding: 60px 0;
+  }
+  &__container{
+    max-width: 600px;
+    margin: auto;
+  @mixin atMedium{
+    max-width: 1000px;
+  }
+    img{
+      margin: 20px 10px;
+      width: 16%;
+      @mixin atSmall{
+        display: inline-block;
+        width: 14%;
+      }
+
+    }
+  }
+  &__info{
+
+      display: block;
+      color: black;
+      text-decoration: none;
+      background-color: $orange;
+      max-width: 150px;
+      margin: 15px auto;
+      padding: 10px 15px;
+      font-weight: bold;
+      border-radius: 10px;
+      @mixin atSmall{
+        margin-top: 40px;
+      }
+
+  }
+}
