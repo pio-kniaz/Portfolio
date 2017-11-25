@@ -4256,3 +4256,21 @@ height: 80px;
       width: 90%;
       text-align: left;
     }
+
+.reveal-item{
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  opacity: 0;
+  -webkit-transition: all 1.7s ease-out;
+  transition: all 1.7s ease-out;
+}
+
+.reveal-item--is-visible{
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+
+/*.skill-icon{
+  opacity: 0;
+}*/
