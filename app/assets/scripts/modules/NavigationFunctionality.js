@@ -26,7 +26,7 @@ class NavigationFunctionality {
             $(matchingHeaderLink).addClass('is-current-link');
           }
         },
-        offset:"19%"
+        offset:"17%"
       });
 
       new Waypoint({
@@ -38,7 +38,7 @@ class NavigationFunctionality {
             $(matchingHeaderLink).addClass('is-current-link');
           }
         },
-        offset:"-75%"
+        offset:"-40%"
       })
     })
   }

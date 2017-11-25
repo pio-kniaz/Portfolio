@@ -11356,7 +11356,7 @@ var NavigationFunctionality = function () {
               (0, _jquery2.default)(matchingHeaderLink).addClass('is-current-link');
             }
           },
-          offset: "19%"
+          offset: "17%"
         });
 
         new Waypoint({
@@ -11368,7 +11368,7 @@ var NavigationFunctionality = function () {
               (0, _jquery2.default)(matchingHeaderLink).addClass('is-current-link');
             }
           },
-          offset: "-75%"
+          offset: "-40%"
         });
       });
     }

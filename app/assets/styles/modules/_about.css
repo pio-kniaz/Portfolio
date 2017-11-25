@@ -2,8 +2,8 @@
   padding-top: 25px;
 
   background-color: black;
-  height: auto;
-  padding-bottom: 80px;
+
+  padding-bottom: 50px;
   border-bottom: 7px solid $orange;
 
 &__content{
@@ -39,28 +39,32 @@
   font-size: 1.2rem;
   margin-bottom: 20px;
   @mixin atSmall{
-    margin-bottom: 40px;
+    margin-bottom:70px;
     font-size: 2rem;
   }
   @mixin atMedium{
     text-align: left;
-
   }
+
 }
 &__description{
 
-  text-align: center;
+    text-align: left;
   font-size: 1rem;
   color: #fff;
   @mixin atSmall{
     font-size: 1.5rem;
   }
   @mixin atMedium{
+    line-height: 1.25;
     /*margin-top: 50px;*/
     text-align: left;
+    max-width: 650px;
   }
   @mixin atLarge{
     margin-top: 50px;
+
+
   }
 }
 

@@ -1,6 +1,6 @@
 
 .contact{
-  padding-top: 35px;
+  padding: 100px 0;
   display: block;
   visibility: visible;
   z-index: 100;
@@ -13,12 +13,19 @@
   }
   &__title{
     font-size: 2rem;
-    margin-bottom: 0;
+
     color: white;
+    @mixin atLarge{
+      font-size: 3.2rem;
+    }
   }
   &__description{
+    margin: 25px;
     color: white;
     font-size: 1.1rem;
+    @mixin atLarge{
+      font-size: 2rem;
+    }
   }
 }
 .social-icons{
@@ -30,6 +37,9 @@
     transform: scale(1);
     display: inline-block;
       transition: all .3s linear;
+      @mixin atLarge{
+        font-size: 3.2rem;
+      }
   }
   &__icon:hover{
     transition: all .3s linear;
@@ -41,7 +51,7 @@
     font-size: 1.5rem;
     max-width: 260px;
     transition: all .3s linear;
-    
+
     margin: auto;
 
   }
