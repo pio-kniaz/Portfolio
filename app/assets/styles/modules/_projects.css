@@ -17,6 +17,7 @@
     margin: auto;
   }
   &__left-arrow{
+    z-index: 5;
     position: absolute;
     font-size: 3rem;
     top: 270px;
@@ -26,6 +27,7 @@
 
   }
   &__right-arrow{
+    z-index: 5;
     position: absolute;
     font-size: 3rem;
     top: 270px;

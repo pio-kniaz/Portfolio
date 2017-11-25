@@ -3665,7 +3665,15 @@ border-bottom: 7px solid #ff641af2;
         display: block;
         color: white;
         text-decoration: none;
+        letter-spacing: 0.5px;
       }
+
+.primary-nav__ul li a.is-current-link{
+          color:#ff641af2;
+          -webkit-transform:scale(1.09);
+                  transform:scale(1.09);
+          font-weight: bold;
+        }
 
 .primary-nav__ul li:last-child{
       margin-bottom: 5px;
@@ -3952,6 +3960,7 @@ border-bottom: 7px solid #ff641af2;
   }
 
 .projects__left-arrow{
+    z-index: 5;
     position: absolute;
     font-size: 3rem;
     top: 270px;
@@ -3963,6 +3972,7 @@ border-bottom: 7px solid #ff641af2;
   }
 
 .projects__right-arrow{
+    z-index: 5;
     position: absolute;
     font-size: 3rem;
     top: 270px;

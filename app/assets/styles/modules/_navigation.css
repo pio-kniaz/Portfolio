@@ -37,6 +37,12 @@
         display: block;
         color: white;
         text-decoration: none;
+        letter-spacing: 0.5px;
+        &.is-current-link{
+          color:#ff641af2;
+          transform:scale(1.09);
+          font-weight: bold;
+        }
       }
     }
     li:last-child{
