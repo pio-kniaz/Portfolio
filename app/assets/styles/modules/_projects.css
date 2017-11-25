@@ -22,7 +22,7 @@
     font-size: 3rem;
     top: 270px;
     left:20px;
-    color: $orange;
+    color: #ff641af2;;
     transition: all 0.5s linear;
 
   }
@@ -32,17 +32,17 @@
     font-size: 3rem;
     top: 270px;
     right: 20px;
-    color: $orange;
+    color: #ff641af2;;
     transition: all 0.5s linear;
   }
   &__right-arrow:hover{
     transform: scale(1.2);
-    color: black;
+    color: white;
     transition: all 0.5s linear;
   }
   &__left-arrow:hover{
     transform: scale(1.2);
-    color: black;
+    color: white;
     transition: all 0.5s linear;
   }
 
@@ -66,7 +66,7 @@
 
     width: 90%;
     margin: auto;
-    opacity: 0.8;
+    opacity: 0.85;
     @mixin atSmall{
       max-width: 60%;
       @mixin atMedium{

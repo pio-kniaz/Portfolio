@@ -1,13 +1,12 @@
 .skills{
 
-  border-top: 7px solid $orange;
+  border-top: 7px solid #ff641af2;;
   padding: 25px 0;
   margin: auto;
   &__title{
+    color: #ff641af2;;
     font-size: 2rem;
     margin-top: 0;
-
-    color: black;
     @mixin atLarge{
       font-size: 3.2rem;
     }
@@ -36,7 +35,7 @@
       display: block;
       color: black;
       text-decoration: none;
-      background-color: $orange;
+      background-color: #ff641af2;;
       max-width: 150px;
       margin: 15px auto;
       padding: 10px 15px;

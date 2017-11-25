@@ -4,7 +4,7 @@
   background-color: black;
 
   padding-bottom: 50px;
-  border-bottom: 7px solid $orange;
+  border-bottom: 7px solid #ff641af2;;
 
 &__content{
 

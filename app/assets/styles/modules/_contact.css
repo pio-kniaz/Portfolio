@@ -4,7 +4,7 @@
   display: block;
   visibility: visible;
   z-index: 100;
-  border-top: 7px solid $orange;
+  border-top: 7px solid #ff641af2;;
   background: black;
   min-height: 350px;
 
@@ -12,6 +12,7 @@
 
   }
   &__title{
+    margin-top: 0;
     font-size: 2rem;
 
     color: white;
@@ -43,7 +44,7 @@
   }
   &__icon:hover{
     transition: all .3s linear;
-    color: $orange;
+    color: #ff641af2;;
     transform: scale(1.2);
   }
   &__mail{
@@ -56,7 +57,7 @@
 
   }
   &__mail:hover{
-    color: $orange;
+    color: #ff641af2;;
     transition: all .3s linear;
     transform: scale(1.2);
   }

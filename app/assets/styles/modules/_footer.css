@@ -1,11 +1,15 @@
 .footer{
-border-top: 7px solid $orange;
+border-top: 7px solid #ff641af2;;
 background:white;
 height: 80px;
+&__passion{
+  color: #ff641af2;;
+display: inline-block;
+}
 &__title{
   margin-top: 30px;
   color: black;
-  font-size: 1rem;
+  font-size: 0.98rem;
   color: black;
   font-weight: bold;
   letter-spacing: 2px;

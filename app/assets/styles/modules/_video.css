@@ -1,7 +1,7 @@
 .video{
   overflow: hidden;
 
-border-bottom: 7px solid $orange;
+border-bottom: 7px solid #ff641af2;;
 &__box{
   max-height: 86vh;
   position: relative;
@@ -33,7 +33,9 @@ border-bottom: 7px solid $orange;
   font-size:1.2rem;
   color: white;
   span{
-    color: $orange;
+    display: inline-block;
+    color: #ff641af2;;
+
   }
   @mixin atSmall{
     font-size: 2rem;
