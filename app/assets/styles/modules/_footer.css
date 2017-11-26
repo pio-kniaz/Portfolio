@@ -1,9 +1,9 @@
 .footer{
-border-top: 7px solid #ff641af2;;
+border-top: 7px solid #ff641a;
 background:white;
 height: 80px;
 &__passion{
-  color: #ff641af2;;
+  color: #ff641a;
 display: inline-block;
 }
 &__title{

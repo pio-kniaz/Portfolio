@@ -11330,13 +11330,22 @@ var NavigationFunctionality = function () {
   function NavigationFunctionality() {
     _classCallCheck(this, NavigationFunctionality);
 
+    this.lazyImages = (0, _jquery2.default)('.lazyload');
     this.pageSections = (0, _jquery2.default)('.page-section');
     this.headerLinks = (0, _jquery2.default)(".primary-nav a");
     this.createPageSectionWaypoints();
     this.addSmoothScrolling();
+    this.refreshWaypoints();
   }
 
   _createClass(NavigationFunctionality, [{
+    key: 'refreshWaypoints',
+    value: function refreshWaypoints() {
+      this.lazyImages.on('load', function () {
+        Waypoint.refreshAll();
+      });
+    }
+  }, {
     key: 'addSmoothScrolling',
     value: function addSmoothScrolling() {
       this.headerLinks.smoothScroll();

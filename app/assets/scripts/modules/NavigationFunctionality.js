@@ -3,12 +3,19 @@ import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoi
 import smoothScroll from "jquery-smooth-scroll"
 class NavigationFunctionality {
   constructor() {
+    this.lazyImages=$('.lazyload')
     this.pageSections =$('.page-section');
     this.headerLinks =$(".primary-nav a");
     this.createPageSectionWaypoints();
     this.addSmoothScrolling();
+    this.refreshWaypoints();
 
 
+  }
+  refreshWaypoints(){
+    this.lazyImages.on('load',function(){
+      Waypoint.refreshAll();
+    })
   }
   addSmoothScrolling(){
     this.headerLinks.smoothScroll();

@@ -3529,7 +3529,7 @@ img{
 .video{
   overflow: hidden;
 
-border-bottom: 7px solid #ff641af2;
+border-bottom: 7px solid #ff641a;
 }
 
 .video__box{
@@ -3576,7 +3576,7 @@ border-bottom: 7px solid #ff641af2;
 
 .video__title span{
     display: inline-block;
-    color: #ff641af2;;
+    color: #ff641a;
 
   }
 
@@ -3671,7 +3671,7 @@ border-bottom: 7px solid #ff641af2;
       }
 
 .primary-nav__ul li a.is-current-link{
-          color:#ff641af2;
+          color:#ff641a;
           -webkit-transform:scale(1.09);
                   transform:scale(1.09);
           font-weight: bold;
@@ -3789,7 +3789,7 @@ border-bottom: 7px solid #ff641af2;
   background-color: black;
 
   padding-bottom: 50px;
-  border-bottom: 7px solid #ff641af2;
+  border-bottom: 7px solid #ff641a;
 
 }
 
@@ -3941,22 +3941,24 @@ border-bottom: 7px solid #ff641af2;
 }
   }
 
-.projects {
-  background-image: url("../../assets/images/bg-works3.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+.projects.lazyloaded{
+    background-image: url("../../assets/images/bg-works3.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
 .projects__inner{
   padding-bottom: 70px;
   background-color: rgba(0, 0, 0, 0.7098039215686275);
+
   }
 
 @media (min-width: 800px){
 
 .projects__inner{
     padding-top: 60px
+
   }
   }
 
@@ -3972,8 +3974,8 @@ border-bottom: 7px solid #ff641af2;
     font-size: 3rem;
     top: 270px;
     left:20px;
-    color: #ff641af2;;
-    -webkit-transition: all 0.5s linear;;
+    color: #ff641a;
+    -webkit-transition: all 0.5s linear;
     transition: all 0.5s linear;
 
   }
@@ -3984,8 +3986,8 @@ border-bottom: 7px solid #ff641af2;
     font-size: 3rem;
     top: 270px;
     right: 20px;
-    color: #ff641af2;;
-    -webkit-transition: all 0.5s linear;;
+    color: #ff641a;
+    -webkit-transition: all 0.5s linear;
     transition: all 0.5s linear;
   }
 
@@ -4106,7 +4108,7 @@ border-bottom: 7px solid #ff641af2;
   display: block;
   visibility: visible;
   z-index: 100;
-  border-top: 7px solid #ff641af2;;
+  border-top: 7px solid #ff641a;
   background: black;
   min-height: 350px;
 }
@@ -4189,13 +4191,13 @@ border-bottom: 7px solid #ff641af2;
   }
 
 .footer{
-border-top: 7px solid #ff641af2;;
+border-top: 7px solid #ff641a;
 background:white;
 height: 80px;
 }
 
 .footer__passion{
-  color: #ff641af2;;
+  color: #ff641a;
 display: inline-block;
 }
 
@@ -4210,13 +4212,13 @@ display: inline-block;
 
 .skills{
 
-  border-top: 7px solid #ff641af2;;
+  border-top: 7px solid #ff641a;
   padding: 25px 0;
   margin: auto;
 }
 
 .skills__title{
-    color: #ff641af2;;
+    color: #ff641a;
     font-size: 2rem;
     margin-top: 0;
   }
@@ -4266,7 +4268,7 @@ display: inline-block;
       display: block;
       color: black;
       text-decoration: none;
-      background-color: #ff641af2;;
+      background-color: #ff641a;
       max-width: 150px;
       margin: 15px auto;
       padding: 10px 15px;

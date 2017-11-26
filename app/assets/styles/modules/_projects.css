@@ -1,14 +1,17 @@
 .projects {
-  background-image: url("../../assets/images/bg-works3.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  &.lazyloaded{
+    background-image: url("../../assets/images/bg-works3.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   &__inner{
   padding-bottom: 70px;
   background-color: rgba(0, 0, 0, 0.7098039215686275);
   @mixin atMedium{
     padding-top: 60px;
   }
+
   }
 
   &__arrow-box{
@@ -22,7 +25,7 @@
     font-size: 3rem;
     top: 270px;
     left:20px;
-    color: #ff641af2;;
+    color: #ff641a;
     transition: all 0.5s linear;
 
   }
@@ -32,7 +35,7 @@
     font-size: 3rem;
     top: 270px;
     right: 20px;
-    color: #ff641af2;;
+    color: #ff641a;
     transition: all 0.5s linear;
   }
   &__right-arrow:hover{
