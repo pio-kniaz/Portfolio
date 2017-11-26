@@ -3,10 +3,11 @@
   padding: 100px 0;
   display: block;
   visibility: visible;
-  z-index: 100;
+  z-index: 5;
   border-top: 7px solid #ff641a;
   background: black;
   min-height: 350px;
+
 
   &__inner{
 
@@ -19,6 +20,10 @@
     @mixin atLarge{
       font-size: 3.2rem;
     }
+    @mixin atExtraLarge{
+      padding: 25px 0;
+
+    }
   }
   &__description{
     margin: 25px;
@@ -26,6 +31,9 @@
     font-size: 1.1rem;
     @mixin atLarge{
       font-size: 2rem;
+    }
+    @mixin atExtraLarge{
+
     }
   }
 }
@@ -41,6 +49,10 @@
       @mixin atLarge{
         font-size: 3.2rem;
       }
+      @mixin atExtraLarge{
+        padding: 35px;
+      font-size: 4rem;
+      }
   }
   &__icon:hover{
     transition: all .3s linear;
@@ -52,9 +64,11 @@
     font-size: 1.5rem;
     max-width: 260px;
     transition: all .3s linear;
-
     margin: auto;
-
+    @mixin atExtraLarge{
+      padding: 25px 0;
+      font-size: 2rem;
+    }
   }
   &__mail:hover{
     color: #ff641af2;;
