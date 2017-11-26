@@ -52,9 +52,9 @@
 
 
   &__title {
-    padding-top: 50px;
+    padding-top: 30px;
     text-align: center;
-    margin-top: 0;
+    margin-top: -0;
     color: white;
     font-size: 2rem;
     max-width: 1236px;
@@ -79,17 +79,27 @@
           /*margin-top: -100px;*/
           transform: scaleY(0.72) translateY(-100px);
           transition: all 1s linear;
+          span{
+
+
+          }
         }
       }
     }
   }
   &__button{
+
     opacity: 0.8;
     border-radius: 5px;
     padding: 10px;
     width: 49%;
     display: inline-block;
     background-color: white;
+    &--transformed{
+      @mixin atMedium{
+        transform: translateY(-146px);
+      }
+    }
     a{
       text-decoration: none;
       color: black;

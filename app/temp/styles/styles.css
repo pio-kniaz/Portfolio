@@ -3854,6 +3854,7 @@ border-bottom: 7px solid #ff641a;
 @media (min-width: 800px){
 
 .about__title{
+    font-size: 2.4rem;
     text-align: left
 
 }
@@ -4008,9 +4009,9 @@ border-bottom: 7px solid #ff641a;
   }
 
 .projects__title {
-    padding-top: 50px;
+    padding-top: 30px;
     text-align: center;
-    margin-top: 0;
+    margin-top: -0;
     color: white;
     font-size: 2rem;
     max-width: 1236px;
@@ -4048,16 +4049,29 @@ border-bottom: 7px solid #ff641a;
           -webkit-transition: all 1s linear;
           transition: all 1s linear;
         }
+          .projects__img--scale span{
+
+
+          }
   }
   }
 
 .projects__button{
+
     opacity: 0.8;
     border-radius: 5px;
     padding: 10px;
     width: 49%;
     display: inline-block;
     background-color: white;
+  }
+
+@media (min-width: 800px){
+
+.projects__button--transformed{
+        -webkit-transform: translateY(-146px);
+                transform: translateY(-146px)
+    }
   }
 
 .projects__button a{

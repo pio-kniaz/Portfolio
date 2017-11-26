@@ -45,7 +45,7 @@ class NavigationFunctionality {
             $(matchingHeaderLink).addClass('is-current-link');
           }
         },
-        offset:"-40%"
+        offset:"-50%"
       })
     })
   }
