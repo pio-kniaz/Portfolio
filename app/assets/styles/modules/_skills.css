@@ -1,12 +1,11 @@
 .skills{
-
   border-top: 7px solid #ff641a;
   padding: 25px 0;
   margin: auto;
   &__title{
     color: #ff641a;
     font-size: 2rem;
-    margin-top: 0;
+    margin-top: 15px;
     @mixin atLarge{
       font-size: 3.2rem;
     }
@@ -19,7 +18,8 @@
     margin: auto;
   @mixin atMedium{
     max-width: 1000px;
-    padding: 0;
+    padding: 45px 0;
+
   }
     img{
       margin: 20px 10px;

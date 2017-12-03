@@ -3542,7 +3542,21 @@ border-bottom: 7px solid #ff641a;
     margin-bottom: -5px;
     overflow: hidden;
     opacity: 0.2;
-    max-width: 100%;
+    width: 135%;
+  }
+
+@media (min-width:530px) {
+
+.video__box video{
+      max-width: 100%
+  }
+  }
+
+@media(min-width: 1010px){
+
+.video__box video{
+      min-width: 100%
+  }
   }
 
 .video__content{
@@ -4089,16 +4103,21 @@ border-bottom: 7px solid #ff641a;
 
 .projects--hidden{
       display: none;
-
-      opacity: 0
+      opacity: 0;
+      -webkit-transition: all 3s linear;
+      transition: all 3s linear;
+      -webkit-transform: translateX(-300px);
+              transform: translateX(-300px)
   }
   }
 
 .projects--active{
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     display: block;
     opacity: 1;
-    -webkit-transition: all 1s linear;
-    transition: all 1s linear;
+    -webkit-transition: all 3s linear;
+    transition: all 3s linear;
   }
 
 .projects__subtitle span{
@@ -4111,14 +4130,18 @@ border-bottom: 7px solid #ff641a;
   }
 
 .projects__description{
+  color: #ff641a;
+  font-weight: bold;
+  font-size: 1.2rem;
   padding-top: 25px;
-  color: white;
+
   max-width: 370px;
   margin: auto;
+
 }
 
 .contact{
-  padding: 100px 0;
+  padding: 80px 0;
   display: block;
   visibility: visible;
   z-index: 5;
@@ -4127,14 +4150,21 @@ border-bottom: 7px solid #ff641a;
   min-height: 350px;
 }
 
+@media (min-width:530px) {
+
+.contact{
+    padding: 100px 0
+}
+  }
+
 .contact__inner{
 
   }
 
 .contact__title{
+
     margin-top: 0;
     font-size: 2rem;
-
     color: white;
   }
 
@@ -4206,27 +4236,77 @@ border-bottom: 7px solid #ff641a;
 .social-icons__mail{
     color: #fff;
     font-size: 1.5rem;
-    max-width: 260px;
+    max-width: 300px;
     -webkit-transition: all .3s linear;
     transition: all .3s linear;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+   -webkit-animation: jiggle 2s infinite ease-in;
+           animation: jiggle 2s infinite ease-in;
   }
 
 @media(min-width: 1420px){
 
 .social-icons__mail{
       padding: 25px 0;
-      font-size: 2rem
+      font-size: 2rem;
+      margin: 0 auto
   }
   }
 
 .social-icons__mail:hover{
-    color: #ff641af2;;
-    -webkit-transition: all .3s linear;;
-    transition: all .3s linear;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    color: #ff641af2;
+     -webkit-animation-play-state: paused;
+             animation-play-state: paused;
+
   }
+
+@-webkit-keyframes jiggle {
+  45%, 65% {
+    -webkit-transform: scale(1.0, 1.0);
+            transform: scale(1.0, 1.0);
+    color:#ededed
+  }
+  50% {
+    color: #f2b991;
+    -webkit-transform: scale(1.1, 0.9);
+            transform: scale(1.1, 0.9);
+  }
+  55% {
+    -webkit-transform: scale(0.9, 1.1) translate(0, -5px);
+            transform: scale(0.9, 1.1) translate(0, -5px);
+    color: #f8711e;
+  }
+  60% {
+    -webkit-transform: scale(1.0, 1.0) translate(0, -5px);
+            transform: scale(1.0, 1.0) translate(0, -5px);
+    color: #ff641af2;
+  }
+}
+
+@keyframes jiggle {
+  45%, 65% {
+    -webkit-transform: scale(1.0, 1.0);
+            transform: scale(1.0, 1.0);
+    color:#ededed
+  }
+  50% {
+    color: #f2b991;
+    -webkit-transform: scale(1.1, 0.9);
+            transform: scale(1.1, 0.9);
+  }
+  55% {
+    -webkit-transform: scale(0.9, 1.1) translate(0, -5px);
+            transform: scale(0.9, 1.1) translate(0, -5px);
+    color: #f8711e;
+  }
+  60% {
+    -webkit-transform: scale(1.0, 1.0) translate(0, -5px);
+            transform: scale(1.0, 1.0) translate(0, -5px);
+    color: #ff641af2;
+  }
+}
 
 .footer{
 border-top: 7px solid #ff641a;
@@ -4263,7 +4343,6 @@ display: inline-block;
 }
 
 .skills{
-
   border-top: 7px solid #ff641a;
   padding: 25px 0;
   margin: auto;
@@ -4272,7 +4351,7 @@ display: inline-block;
 .skills__title{
     color: #ff641a;
     font-size: 2rem;
-    margin-top: 0;
+    margin-top: 15px;
   }
 
 @media(min-width: 1010px){
@@ -4298,7 +4377,7 @@ display: inline-block;
 
 .skills__container{
     max-width: 1000px;
-    padding: 0
+    padding: 45px 0
   }
   }
 
