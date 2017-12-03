@@ -3646,6 +3646,21 @@ border-bottom: 7px solid #ff641a;
 
   }
 
+@media (min-width: 800px){
+
+.primary-nav__ul {
+      display: block;
+      position: relative;
+      background: none;
+      text-align: right;
+      -webkit-transform: translate(0);
+              transform: translate(0);
+      -webkit-transition: all 0.3s linear;
+      transition: all 0.3s linear
+
+  }
+  }
+
 .primary-nav__ul li {
       margin-top: 5px;
       padding-top: 8px;
@@ -3657,7 +3672,7 @@ border-bottom: 7px solid #ff641a;
 
 .primary-nav__ul li {
         margin-top: 20px;
-        text-align: center;
+        text-align: right;
         display: inline-block;
         width: 15%;
         margin-right: 10px
