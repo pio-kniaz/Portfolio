@@ -13,7 +13,6 @@ class MobileMenu {
     this.menuContent.toggleClass('primary-nav__ul--active')
     this.hamburger.toggleClass('header__hamburger-button--close-x')
   }
-
 }
 
 export default MobileMenu;

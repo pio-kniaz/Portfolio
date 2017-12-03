@@ -3628,8 +3628,9 @@ border-bottom: 7px solid #ff641a;
   }
 
 .primary-nav__ul {
-    -webkit-transform: translateX(-1000px);
-            transform: translateX(-1000px);
+    display: block;
+    -webkit-transform: translate(0);
+            transform: translate(0);
     -webkit-transition: all .3s linear;
     transition: all .3s linear;
     text-align: center;
@@ -3642,20 +3643,7 @@ border-bottom: 7px solid #ff641a;
     right: 0;
     background: #000000f2;
     max-height: 40vh;
-  }
 
-@media (min-width: 800px){
-
-.primary-nav__ul {
-      display: block;
-      position: relative;
-      background: none;
-      text-align: right;
-      -webkit-transform: translate(0);
-              transform: translate(0);
-      -webkit-transition: all 0.3s linear;
-      transition: all 0.3s linear
-  }
   }
 
 .primary-nav__ul li {
@@ -3695,13 +3683,26 @@ border-bottom: 7px solid #ff641a;
       margin-bottom: 5px;
     }
 
-.primary-nav__ul--active {
-      display: block;
-      -webkit-transform: translate(0);
-              transform: translate(0);
+.primary-nav__ul--hidden {
+      -webkit-transform: translateY(-1000px);
+              transform: translateY(-1000px);
       -webkit-transition: all .3s linear;
       transition: all .3s linear;
     }
+
+@media (min-width: 800px){
+
+.primary-nav__ul--hidden {
+        display: block;
+        position: relative;
+        background: none;
+        text-align: right;
+        -webkit-transform: translate(0);
+                transform: translate(0);
+        -webkit-transition: all 0.3s linear;
+        transition: all 0.3s linear
+    }
+  }
 
 .header{
   position: fixed;
@@ -3718,6 +3719,12 @@ border-bottom: 7px solid #ff641a;
 .header{
     height: 75px
 }
+  }
+
+.header button{
+    background: none;
+    border: none;
+
   }
 
 .header__hamburger-button{
@@ -3793,8 +3800,8 @@ border-bottom: 7px solid #ff641a;
       }
 
 .header__hamburger-button--close-x::after{
-        -webkit-transform:rotate(-45deg) scaleX(1.25) translateY(1px);
-                transform:rotate(-45deg) scaleX(1.25) translateY(1px);
+        -webkit-transform:rotate(-45deg) scaleX(1.25) translateX(-1px);
+                transform:rotate(-45deg) scaleX(1.25) translateX(-1px);
       }
 
 .about{

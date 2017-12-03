@@ -11097,25 +11097,27 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _MobileMenu = __webpack_require__(3);
-
-var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
-
-var _ProjectsCarusele = __webpack_require__(4);
+var _ProjectsCarusele = __webpack_require__(3);
 
 var _ProjectsCarusele2 = _interopRequireDefault(_ProjectsCarusele);
 
-var _RevealOnScroll = __webpack_require__(5);
+var _RevealOnScroll = __webpack_require__(4);
 
 var _RevealOnScroll2 = _interopRequireDefault(_RevealOnScroll);
 
-var _NavigationFunctionality = __webpack_require__(6);
+var _NavigationFunctionality = __webpack_require__(5);
 
 var _NavigationFunctionality2 = _interopRequireDefault(_NavigationFunctionality);
 
+var _Button = __webpack_require__(7);
+
+var _Button2 = _interopRequireDefault(_Button);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var mobileMenu = new _MobileMenu2.default();
+// var mobileMenu = new MobileMenu();
+
+// import MobileMenu from "./modules/MobileMenu"
 var projectsCarusele = new _ProjectsCarusele2.default();
 var smoothScroll = new _NavigationFunctionality2.default();
 new _RevealOnScroll2.default((0, _jquery2.default)('.reveal-item'), "60%");
@@ -11123,54 +11125,6 @@ new _RevealOnScroll2.default((0, _jquery2.default)('.skill-icon'), "65%");
 
 /***/ }),
 /* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _jquery = __webpack_require__(0);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var MobileMenu = function () {
-  function MobileMenu() {
-    _classCallCheck(this, MobileMenu);
-
-    this.hamburger = (0, _jquery2.default)('.header__hamburger-button');
-    this.menuContent = (0, _jquery2.default)('.primary-nav__ul');
-    this.events();
-  }
-
-  _createClass(MobileMenu, [{
-    key: 'events',
-    value: function events() {
-      this.hamburger.click(this.toggleTheMenu.bind(this));
-    }
-  }, {
-    key: 'toggleTheMenu',
-    value: function toggleTheMenu() {
-      this.menuContent.toggleClass('primary-nav__ul--active');
-      this.hamburger.toggleClass('header__hamburger-button--close-x');
-    }
-  }]);
-
-  return MobileMenu;
-}();
-
-exports.default = MobileMenu;
-
-/***/ }),
-/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11236,7 +11190,7 @@ var ProjectsCarusele = function () {
 exports.default = ProjectsCarusele;
 
 /***/ }),
-/* 5 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11298,7 +11252,7 @@ var RevealOnScroll = function () {
 exports.default = RevealOnScroll;
 
 /***/ }),
-/* 6 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11318,7 +11272,7 @@ var _noframework = __webpack_require__(1);
 
 var _noframework2 = _interopRequireDefault(_noframework);
 
-var _jquerySmoothScroll = __webpack_require__(7);
+var _jquerySmoothScroll = __webpack_require__(6);
 
 var _jquerySmoothScroll2 = _interopRequireDefault(_jquerySmoothScroll);
 
@@ -11389,7 +11343,7 @@ var NavigationFunctionality = function () {
 exports.default = NavigationFunctionality;
 
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -11754,6 +11708,52 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 }));
 
 
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var menu = document.querySelector('#primary-nav');
+var primaryMenu = document.querySelector('#primary-nav__ul');
+var showHideButton = document.createElement('button');
+var element = document.createElement('div');
+
+element.classList.add('header__hamburger-button--middle');
+showHideButton.setAttribute('type', 'button');
+showHideButton.setAttribute('aria-controls', 'primary-nav');
+showHideButton.classList.add('header__hamburger-button');
+menu.parentNode.insertBefore(showHideButton, menu);
+showHideButton.appendChild(element);
+
+function showMenu() {
+  // showHideButton.innerHTML = 'Zamknij menu';
+  showHideButton.setAttribute('aria-label', 'Close menu');
+
+  showHideButton.setAttribute('aria-expanded', 'true');
+  primaryMenu.classList.add('primary-nav__ul');
+  primaryMenu.classList.remove('primary-nav__ul--hidden');
+  showHideButton.classList.add("header__hamburger-button--close-x");
+}
+
+function hideMenu() {
+  showHideButton.setAttribute('aria-expanded', 'false');
+  showHideButton.setAttribute('aria-label', 'Open menu');
+  // showHideButton.innerHTML = 'Otwórz menu';
+
+  primaryMenu.classList.add('primary-nav__ul--hidden');
+  showHideButton.classList.remove("header__hamburger-button--close-x");
+}
+
+showHideButton.addEventListener('click', function () {
+  if (primaryMenu.classList.contains('primary-nav__ul--hidden')) {
+    showMenu();
+  } else {
+    hideMenu();
+  }
+}, hideMenu());
 
 /***/ })
 /******/ ]);

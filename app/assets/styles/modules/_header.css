@@ -9,6 +9,11 @@
   @mixin atMedium{
     height: 75px;
   }
+  button{
+    background: none;
+    border: none;
+
+  }
   &__hamburger-button{
     width: 20px;
     height: 19px;
@@ -60,7 +65,7 @@
         transform: scaleX(0);
       }
       &::after{
-        transform:rotate(-45deg) scaleX(1.25) translateY(1px);
+        transform:rotate(-45deg) scaleX(1.25) translateX(-1px);
       }
     }
   }
