@@ -12,7 +12,8 @@
     top: 0;
     left: 0;
     right: 0;
-    background: #3d3a3af7;
+    background: black;
+
 
     @mixin atMedium{
       display: block;
