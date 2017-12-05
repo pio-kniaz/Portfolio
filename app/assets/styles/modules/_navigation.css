@@ -13,7 +13,7 @@
     left: 0;
     right: 0;
     background: #000000f2;
-    max-height: 40vh;
+    min-height: 40vh;
     @mixin atMedium{
       display: block;
       position: relative;
