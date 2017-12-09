@@ -1,6 +1,6 @@
 .home{
 
-background-image: url("../../assets/images/home.jpeg");
+background-image: url("../../assets/images/computer.jpeg");
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
@@ -11,7 +11,7 @@ border-bottom: 7px solid #ff641a;
   background-color: black;
   opacity: 0.72;
   @mixin atMedium{
-    min-height: 85vh;
+    min-height: 90vh;
   }
 
 

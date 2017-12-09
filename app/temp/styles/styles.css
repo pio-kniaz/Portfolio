@@ -3528,7 +3528,7 @@ img{
 
 .home{
 
-background-image: url("../../assets/images/home.jpeg");
+background-image: url("../../assets/images/computer.jpeg");
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
@@ -3545,7 +3545,7 @@ border-bottom: 7px solid #ff641a;
 @media (min-width: 800px){
 
 .home__box{
-    min-height: 85vh
+    min-height: 90vh
 }
   }
 
