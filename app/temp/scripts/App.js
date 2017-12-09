@@ -11113,15 +11113,21 @@ var _Button = __webpack_require__(7);
 
 var _Button2 = _interopRequireDefault(_Button);
 
+var _Preloader = __webpack_require__(8);
+
+var _Preloader2 = _interopRequireDefault(_Preloader);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // var mobileMenu = new MobileMenu();
-
-// import MobileMenu from "./modules/MobileMenu"
 var projectsCarusele = new _ProjectsCarusele2.default();
+// import MobileMenu from "./modules/MobileMenu"
+
 var smoothScroll = new _NavigationFunctionality2.default();
 new _RevealOnScroll2.default((0, _jquery2.default)('.reveal-item'), "60%");
 new _RevealOnScroll2.default((0, _jquery2.default)('.skill-icon'), "65%");
+
+var preloader = new _Preloader2.default();
 
 /***/ }),
 /* 3 */
@@ -11754,6 +11760,60 @@ showHideButton.addEventListener('click', function () {
     hideMenu();
   }
 }, hideMenu());
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Preloader = function () {
+  function Preloader() {
+    _classCallCheck(this, Preloader);
+
+    this.window = (0, _jquery2.default)(document);
+    this.preloader = (0, _jquery2.default)('.preload');
+
+    this.events();
+  }
+
+  _createClass(Preloader, [{
+    key: 'events',
+    value: function events() {
+      this.window.ready(this.hidePreloader.bind(this));
+    }
+  }, {
+    key: 'hidePreloader',
+    value: function hidePreloader() {
+      var that = this;
+      setTimeout(function () {
+        // console.log(this);
+        console.log(that);
+
+        that.preloader.removeClass('show-preloader');
+      }, 2400);
+    }
+  }]);
+
+  return Preloader;
+}();
+
+exports.default = Preloader;
 
 /***/ })
 /******/ ]);
