@@ -11175,6 +11175,7 @@ var ProjectsCarusele = function () {
         this.current.removeClass('projects--active');
         nextContent.addClass('projects--active');
         this.current = nextContent;
+        this.next.addClass('dupa');
       }
     }
   }, {

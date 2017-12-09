@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin-ext" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
   <title>Portfolio</title>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="keywords" content="Portfolio Page,Front End Developer,WebMaster">
@@ -38,19 +38,19 @@
     </div>
   </header>
 
-  <section class="video page-section"  id="home-section" data-matching-link="#home-link">
-    <div class="video__box">
+  <section class="home page-section"  id="home-section" data-matching-link="#home-link">
+    <div class="home__box">
       <!-- <video src="assets/video/video.mov" autoplay muted loop></video> -->
-      <video autoplay muted loop>
+      <!-- <video autoplay muted loop playsinline>
+            <source src="assets/video/video2.mp4" >
 
-            <source src="assets/video/video2.mp4" />
+      </video> -->
 
-      </video>
     </div>
-    <div class="video__content">
+    <div class="home__content">
       <div class="wrapper">
-        <h1 class="video__title"><span>Junior</span> <strong>Front End Developer</strong></h1>
-        <p class="video__subtitle">Piotr Kniaź</p>
+        <h1 class="home__title"><span>Junior</span> <strong>Front End Developer</strong></h1>
+        <p class="home__subtitle">Piotr Kniaź</p>
       </div>
     </div>
   </section>
@@ -77,8 +77,8 @@
     </div>
   </section>
 
-  <section class="projects  lazyload page-section" id="projects-section" data-matching-link="#projects-link">
-    <div class="projects__inner">
+  <section class="projects  lazyload">
+    <div class="projects__inner page-section" id="projects-section" data-matching-link="#projects-link">
       <div class="projects__arrow-box">
         <h2 class="projects__title">My Projects</h2>
         <span class="projects__left-arrow hidden"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i></span>
@@ -92,12 +92,14 @@
             <div class="projects__img">
               <img  class="lazyload" data-src="assets/images/taje.jpg" alt="Tajem web Page">
               <div class="projects__button projects__button--live">
-                <span><i class="fa fa-bolt" aria-hidden="true"></i></span>
-                <a href="https://pio-kniaz.github.io/Tajam-Web/">LIVE</a>
+                <a href="https://pio-kniaz.github.io/Tajam-Web/"><span><i class="fa fa-bolt" aria-hidden="true"></i></span>
+                  LIVE</a>
               </div>
               <div class="projects__button projects__button--code">
-                <span><i class="fa fa-code" aria-hidden="true"></i></span>
-                <a href="https://github.com/pio-kniaz/Tajam-Web">GitHub</a>
+
+                <a href="https://github.com/pio-kniaz/Tajam-Web">
+                  <span><i class="fa fa-code" aria-hidden="true"></i></span>
+                  GitHub</a>
               </div>
             </div>
           </div>
@@ -124,12 +126,16 @@
             <div class="projects__img">
               <img class="lazyload" data-src="assets/images/portfolio.jpg" alt="Portfolio Page">
               <div class="projects__button projects__button--live">
-                <span><i class="fa fa-bolt" aria-hidden="true"></i></span>
-                <a href="#">LIVE</a>
+
+                <a href="#">
+                  <span><i class="fa fa-bolt" aria-hidden="true"></i></span>
+                  LIVE</a>
               </div>
               <div class="projects__button projects__button--code">
-                <span><i class="fa fa-code" aria-hidden="true"></i></span>
-                <a href="https://github.com/pio-kniaz/Portfolio">GitHub</a>
+
+                <a href="https://github.com/pio-kniaz/Portfolio">
+                  <span><i class="fa fa-code" aria-hidden="true"></i></span>
+                  GitHub</a>
               </div>
             </div>
           </div>
@@ -157,12 +163,16 @@
             <div class="projects__img">
               <img class="lazyload  projects__img--scale" data-src="assets/images/hazzard-game.jpg" alt="JavScript hazzard Game">
               <div class="projects__button projects__button--live  projects__button--transformed">
-                <span><i class="fa fa-bolt" aria-hidden="true"></i></span>
-                <a href="https://pio-kniaz.github.io/Hazzard-Game/">LIVE</a>
+
+                <a href="https://pio-kniaz.github.io/Hazzard-Game/">
+                  <span><i class="fa fa-bolt" aria-hidden="true"></i></span>
+                LIVE</a>
               </div>
               <div class="projects__button projects__button--code  projects__button--transformed">
-                <span><i class="fa fa-code" aria-hidden="true"></i></span>
-                <a href="https://github.com/pio-kniaz/Hazzard-Game">GitHub</a>
+
+                <a href="https://github.com/pio-kniaz/Hazzard-Game">
+                  <span><i class="fa fa-code" aria-hidden="true"></i></span>
+                  GitHub</a>
               </div>
             </div>
           </div>
@@ -185,12 +195,16 @@
             <div class="projects__img">
               <img  class="lazyload" data-src="assets/images/weather-1.jpg" alt="Weather App">
               <div class="projects__button projects__button--live">
-                <span><i class="fa fa-bolt" aria-hidden="true"></i></span>
-                <a href="https://pio-kniaz.github.io/Weather-app/">LIVE</a>
+
+                <a href="https://pio-kniaz.github.io/Weather-app/">
+                    <span><i class="fa fa-bolt" aria-hidden="true"></i></span>
+                    LIVE</a>
               </div>
               <div class="projects__button projects__button--code">
-                <span><i class="fa fa-code" aria-hidden="true"></i></span>
-                <a href="https://github.com/pio-kniaz/Weather-app">GitHub</a>
+
+                <a href="https://github.com/pio-kniaz/Weather-app">
+                    <span><i class="fa fa-code" aria-hidden="true"></i></span>
+                    GitHub</a>
               </div>
             </div>
           </div>

@@ -18,8 +18,10 @@
     position: relative;
     max-width: 1236px;
     margin: auto;
+    cursor: pointer;
   }
   &__left-arrow{
+    cursor: pointer;
     z-index: 5;
     position: absolute;
     font-size: 3rem;
@@ -103,11 +105,11 @@
     a{
       text-decoration: none;
       color: black;
+      padding: 10px 30px;
     }
   }
   &__button:hover{
     opacity: 1;
-    transform: scale(1.04);
   }
   &--hidden{
     @mixin atMedium{

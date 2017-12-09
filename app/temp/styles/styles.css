@@ -3502,7 +3502,7 @@ template {
 }
 
 body {
-  font-family: 'Roboto' , sans-serif;
+font-family: 'Lato', sans-serif;
   color: #333;
 }
 
@@ -3526,19 +3526,30 @@ img{
   text-align: center;
 }
 
-.video{
-  overflow: hidden;
+.home{
 
+background-image: url("../../assets/images/home.jpeg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
 border-bottom: 7px solid #ff641a;
 }
 
-.video__box{
-  max-height: 86vh;
+.home__box{
+  min-height: 55vh;
   position: relative;
   background-color: black;
+  opacity: 0.72;
 }
 
-.video__box video{
+@media (min-width: 800px){
+
+.home__box{
+    min-height: 85vh
+}
+  }
+
+.home__box home{
     margin-bottom: -5px;
     overflow: hidden;
     opacity: 0.75;
@@ -3547,19 +3558,19 @@ border-bottom: 7px solid #ff641a;
 
 @media (min-width:530px) {
 
-.video__box video{
+.home__box home{
       max-width: 100%
   }
   }
 
 @media(min-width: 1010px){
 
-.video__box video{
+.home__box home{
       min-width: 100%
   }
   }
 
-.video__content{
+.home__content{
   max-width: 265px;
   position: absolute;
   left: 10%;
@@ -3570,7 +3581,7 @@ border-bottom: 7px solid #ff641a;
 
 @media (min-width:530px) {
 
-.video__content{
+.home__content{
     top:30%;
     left: 25%
 }
@@ -3578,17 +3589,17 @@ border-bottom: 7px solid #ff641a;
 
 @media (min-width: 800px){
 
-.video__content{
+.home__content{
     max-width: 450px
 }
   }
 
-.video__title{
+.home__title{
   font-size:1.2rem;
   color: white;
 }
 
-.video__title span{
+.home__title span{
     display: inline-block;
     color: #ff641a;
 
@@ -3596,33 +3607,33 @@ border-bottom: 7px solid #ff641a;
 
 @media (min-width:530px) {
 
-.video__title{
+.home__title{
     font-size: 2rem
 }
   }
 
 @media (min-width: 800px){
 
-.video__title{
+.home__title{
     font-size: 3rem
 }
   }
 
-.video__subtitle{
+.home__subtitle{
   font-size: 1rem;
   color: white;
 }
 
 @media (min-width:530px) {
 
-.video__subtitle{
+.home__subtitle{
     font-size: 1.5rem
 }
   }
 
 @media (min-width: 800px){
 
-.video__subtitle{
+.home__subtitle{
     font-size: 2rem
 }
   }
@@ -4003,9 +4014,11 @@ border-bottom: 7px solid #ff641a;
     position: relative;
     max-width: 1236px;
     margin: auto;
+    cursor: pointer;
   }
 
 .projects__left-arrow{
+    cursor: pointer;
     z-index: 5;
     position: absolute;
     font-size: 3rem;
@@ -4113,12 +4126,11 @@ border-bottom: 7px solid #ff641a;
 .projects__button a{
       text-decoration: none;
       color: black;
+      padding: 10px 30px;
     }
 
 .projects__button:hover{
     opacity: 1;
-    -webkit-transform: scale(1.04);
-            transform: scale(1.04);
   }
 
 @media (min-width: 800px){

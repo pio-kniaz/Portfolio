@@ -1,13 +1,21 @@
-.video{
-  overflow: hidden;
+.home{
 
+background-image: url("../../assets/images/home.jpeg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
 border-bottom: 7px solid #ff641a;
 &__box{
-  max-height: 86vh;
+  min-height: 55vh;
   position: relative;
   background-color: black;
+  opacity: 0.72;
+  @mixin atMedium{
+    min-height: 85vh;
+  }
 
-  video{
+
+  home{
     margin-bottom: -5px;
     overflow: hidden;
     opacity: 0.75;

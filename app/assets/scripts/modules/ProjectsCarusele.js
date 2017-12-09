@@ -13,12 +13,14 @@ class ProjectsCarusele {
   }
   nextProject(){
     var nextContent = this.current.next();
-    var prevContent=this.current.prev()
+    var prevContent=this.current.prev();
     if(nextContent.length){
       this.current.removeClass('projects--active');
       nextContent.addClass('projects--active');
       this.current= nextContent;
+      this.next.addClass('dupa')
     }
+
   }
   prevProjects(){
     var prevContent=this.current.prev()
@@ -27,7 +29,7 @@ class ProjectsCarusele {
       this.current.removeClass('projects--active');
       prevContent.addClass('projects--active');
       this.current=prevContent;
-      
+
 
     }
 
