@@ -11157,6 +11157,7 @@ var ProjectsCarusele = function () {
     this.next = (0, _jquery2.default)('.projects__right-arrow');
     this.prev = (0, _jquery2.default)('.projects__left-arrow');
     this.current = (0, _jquery2.default)('.projects--active');
+    this.backToFirst = (0, _jquery2.default)('.backToFirst');
     this.events();
   }
 
@@ -11175,7 +11176,12 @@ var ProjectsCarusele = function () {
         this.current.removeClass('projects--active');
         nextContent.addClass('projects--active');
         this.current = nextContent;
-        this.next.addClass('dupa');
+      } else {
+
+        this.current.removeClass('projects--active');
+        this.current = this.backToFirst = (0, _jquery2.default)('.backToFirst');
+        this.current.addClass('projects--active');
+        nextContent.addClass('projects--active');
       }
     }
   }, {
@@ -11187,6 +11193,11 @@ var ProjectsCarusele = function () {
         this.current.removeClass('projects--active');
         prevContent.addClass('projects--active');
         this.current = prevContent;
+      } else {
+        this.current.removeClass('projects--active');
+        this.current = (0, _jquery2.default)('.backToLast');
+        this.current.addClass('projects--active');
+        prevContent.addClass('projects--active');
       }
     }
   }]);

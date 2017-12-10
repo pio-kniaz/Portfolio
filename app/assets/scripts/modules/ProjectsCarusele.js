@@ -4,6 +4,7 @@ class ProjectsCarusele {
     this.next=$('.projects__right-arrow');
     this.prev=$('.projects__left-arrow');
     this.current=$('.projects--active');
+    this.backToFirst=$('.backToFirst');
     this.events();
   }
 
@@ -18,8 +19,15 @@ class ProjectsCarusele {
       this.current.removeClass('projects--active');
       nextContent.addClass('projects--active');
       this.current= nextContent;
-      this.next.addClass('dupa')
     }
+  else{
+
+    this.current.removeClass('projects--active');
+    this.current = this.backToFirst=$('.backToFirst');
+    this.current.addClass('projects--active');
+    nextContent.addClass('projects--active');
+  }
+
 
   }
   prevProjects(){
@@ -29,9 +37,15 @@ class ProjectsCarusele {
       this.current.removeClass('projects--active');
       prevContent.addClass('projects--active');
       this.current=prevContent;
-
+    }
+    else{
+      this.current.removeClass('projects--active');
+      this.current =$('.backToLast');
+      this.current.addClass('projects--active');
+      prevContent.addClass('projects--active');
 
     }
+
 
   }
 }
