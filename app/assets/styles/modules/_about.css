@@ -1,72 +1,57 @@
 .about{
-  padding-top: 25px;
 
-  background-color: black;
-
-  padding-bottom: 50px;
+  background-color: white;
   border-bottom: 7px solid #ff641a;
-
-&__content{
-
-}
-&__photo{
-  opacity: 0.65;
-  width: 100%;
-  img{
-    border: 8px solid white;
-    width: 50%;
-    display: none;
-    @mixin atMedium{
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-  }
-}
-&__text{
-  @mixin atMedium{
-
-    margin-top: -50px;
-  }
-  @mixin atLarge{
-    /*margin-top: -20px;*/
-  }
-
-}
-&__title{
-  text-align: center;
-  color: #fff;
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+  padding: 20px 0;
   @mixin atSmall{
-    margin-bottom:70px;
+    padding: 40px 0;
+  }
+  @mixin atMedium{
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  &__title{
     font-size: 2rem;
-  }
-  @mixin atMedium{
-    font-size: 2.4rem;
-    text-align: left;
-  }
 
-}
-&__description{
 
-    text-align: left;
-  font-size: 1rem;
-  color: #fff;
-  @mixin atSmall{
-    font-size: 1.5rem;
+    @mixin atSmall{
+      font-size: 2.4rem;
+      margin-bottom: 35px;
+    }
+    @mixin atMedium{
+      margin-bottom: 50px;
+    }
+
   }
+  &__text{
+    font-size: 1.2rem;
+    width: 100%;
+    @mixin atSmall{
+        font-size: 1.5rem;
+    }
   @mixin atMedium{
-    line-height: 1.25;
-    /*margin-top: 50px;*/
-    text-align: left;
-    max-width: 650px;
+    max-width: 700px;
+    margin: auto;
   }
   @mixin atLarge{
-    margin-top: 50px;
-
-
+    font-size: 1.5rem;
+    max-width: 900px;
+    font-weight:500;
   }
-}
-
+  @mixin atExtraLarge{
+    font-size: 1.8rem;
+    max-width: 1100px;
+    padding-bottom: 10px;
+  }
+  }
+  &__description{
+    line-height: 1.35;
+    text-align: center;
+    span{
+      color: #ff641a;
+    }
+  @mixin atMedium{
+    padding: 10px 0;
+  }
+  }
 }
