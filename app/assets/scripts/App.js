@@ -1,5 +1,5 @@
 import $ from 'jquery';
-
+import Swiper from "./modules/Swiper"
 // import ProjectsCarusele from "./modules/ProjectsCarusele"
 import RevealOnScroll from "./modules/RevealOnScroll"
 import NavigationFunctionality from "./modules/NavigationFunctionality"

@@ -1,0 +1,30 @@
+.swiper-container {
+
+      display: flex;
+      justify-content: space-between;
+      /* @mixin atMedium{
+        display: none;
+      } */
+    }
+    .swiper-slide {
+      margin: 0;
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+
+      align-items: center;
+      @mixin atMedium{
+
+      }
+    }
+.swiper-pagination{
+  @mixin atMedium{
+    display: none;
+  }
+  bottom: 0px!important;
+}
+/* .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+  bottom: 0;
+} */

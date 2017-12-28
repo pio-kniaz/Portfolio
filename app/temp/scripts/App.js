@@ -11097,19 +11097,23 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _RevealOnScroll = __webpack_require__(3);
+var _Swiper = __webpack_require__(3);
+
+var _Swiper2 = _interopRequireDefault(_Swiper);
+
+var _RevealOnScroll = __webpack_require__(4);
 
 var _RevealOnScroll2 = _interopRequireDefault(_RevealOnScroll);
 
-var _NavigationFunctionality = __webpack_require__(4);
+var _NavigationFunctionality = __webpack_require__(5);
 
 var _NavigationFunctionality2 = _interopRequireDefault(_NavigationFunctionality);
 
-var _Button = __webpack_require__(6);
+var _Button = __webpack_require__(7);
 
 var _Button2 = _interopRequireDefault(_Button);
 
-var _Preloader = __webpack_require__(7);
+var _Preloader = __webpack_require__(8);
 
 var _Preloader2 = _interopRequireDefault(_Preloader);
 
@@ -11117,7 +11121,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 // var mobileMenu = new MobileMenu();
 // var projectsCarusele = new ProjectsCarusele();
-
 
 // import ProjectsCarusele from "./modules/ProjectsCarusele"
 var smoothScroll = new _NavigationFunctionality2.default();
@@ -11128,6 +11131,48 @@ var preloader = new _Preloader2.default();
 
 /***/ }),
 /* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var swiper = new Swiper('.swiper-container', {
+  // Default parameters
+  slidesPerView: 1,
+  spaceBetween: 40,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is <= 320px
+    530: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false
+      }
+    },
+    // when window width is <= 640px
+    800: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      }
+    }
+  }
+});
+
+/***/ }),
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11189,7 +11234,7 @@ var RevealOnScroll = function () {
 exports.default = RevealOnScroll;
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11209,7 +11254,7 @@ var _noframework = __webpack_require__(1);
 
 var _noframework2 = _interopRequireDefault(_noframework);
 
-var _jquerySmoothScroll = __webpack_require__(5);
+var _jquerySmoothScroll = __webpack_require__(6);
 
 var _jquerySmoothScroll2 = _interopRequireDefault(_jquerySmoothScroll);
 
@@ -11280,7 +11325,7 @@ var NavigationFunctionality = function () {
 exports.default = NavigationFunctionality;
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -11647,7 +11692,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11693,7 +11738,7 @@ showHideButton.addEventListener('click', function () {
 }, hideMenu());
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
