@@ -11117,12 +11117,16 @@ var _Preloader = __webpack_require__(8);
 
 var _Preloader2 = _interopRequireDefault(_Preloader);
 
+var _Hello = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./modules/Hello\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
+var _Hello2 = _interopRequireDefault(_Hello);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // var mobileMenu = new MobileMenu();
-var projectsCarusele = new _ProjectsCarusele2.default();
-// import MobileMenu from "./modules/MobileMenu"
 
+// import MobileMenu from "./modules/MobileMenu"
+var projectsCarusele = new _ProjectsCarusele2.default();
 var smoothScroll = new _NavigationFunctionality2.default();
 new _RevealOnScroll2.default((0, _jquery2.default)('.reveal-item'), "60%");
 new _RevealOnScroll2.default((0, _jquery2.default)('.skill-icon'), "65%");

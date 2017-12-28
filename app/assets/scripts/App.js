@@ -5,6 +5,7 @@ import RevealOnScroll from "./modules/RevealOnScroll"
 import NavigationFunctionality from "./modules/NavigationFunctionality"
 import Button from "./modules/Button"
 import Preloader from "./modules/Preloader"
+import Hello from "./modules/Hello"
 
 
 // var mobileMenu = new MobileMenu();
