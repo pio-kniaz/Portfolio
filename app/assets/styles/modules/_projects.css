@@ -1,99 +1,44 @@
-.projects {
+.projects{
   padding: 30px 0 50px 0;
   background-color: black;
-  @mixin atLarge {
-    padding: 100px 0 140px 0;
+  @mixin atLarge{
+    padding: 60px 0 100px 0;
   }
-  &__title {
+  &__title{
     margin: 25px;
     padding-bottom: 15px;
     color: white;
-    @mixin atMedium {
+    @mixin atMedium{
       font-size: 2.4rem;
-      margin-bottom: 100px;
+      margin: 50px;
     }
-    @mixin atExtraLarge{
-      font-size: 4.2rem;
-    }
+
   }
-  &__img-wrap {
+  &__img-wrap{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-
-  &__work {
-    overflow: hidden;
-    position: relative;
+  &__work{
+position: relative;
     flex-basis: 50%;
-    margin: 20px 0;
-    a {
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      position: absolute;
-      width: 100%;
-      z-index: 3;
+    img{
+      position: relative;
+      transform: scale(1);
+      transition: all .3s linear;
     }
-    i {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      border-radius: 50%;
-      font-size: 34px;
-      color: #000000;
-      width: 60px;
-      height: 60px;
-      line-height: 60px;
-      background: #ffffff;
+    img:hover{
+    transform: scale(0.9);
+    transition: all 0.3s linear;
+    opacity: 0.5;
     }
-    i {
-      transform: translate(-50%, -50%) scale(0);
-      transition: transform 300ms 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    @mixin atMedium{
+      flex-basis: 50%;
     }
-    img {
-      max-width: 100%;
-      vertical-align: top;
-    }
-  }
-  &__work:hover i {
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-  &__work--1 {
-    background-color: black;
-    i {
-      color: #ff641a;
-    }
-  }
-  &__work--2 {
-    background-color: black;
-    i {
-      color: #ff641a;
-    }
-  }
-  &__work--3 {
 
 
-    i {
-      color: #ff641a;
-    }
   }
-  &__work--4 {
-      background-color: black;
-    i {
-      color: #ff641a;
-    }
-  }
-  &__work * {
-    transition: all .35s ease-in-out;
-  }
-  &__work:hover img {
-    opacity: 0.3;
-    filter: grayscale(100%);
-  }
-  /* &__button-wrap{
+  &__button-wrap{
 
   position: absolute;
   top: 60%;
@@ -112,5 +57,6 @@ a{
 
   }
 }
-} */
+}
+
 }
