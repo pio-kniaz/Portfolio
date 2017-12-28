@@ -1,148 +1,62 @@
-.projects {
-  &.lazyloaded{
-    background-image: url("../../assets/images/bg-works3.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.projects{
+  padding: 30px 0 50px 0;
+  background-color: black;
+  @mixin atLarge{
+    padding: 60px 0 100px 0;
   }
-  &__inner{
-  padding-bottom: 70px;
-  background-color: rgba(0, 0, 0, 0.7098039215686275);
-  @mixin atMedium{
-    padding-top: 60px;
-  }
-
-  }
-
-  &__arrow-box{
-    position: relative;
-    max-width: 1236px;
-    margin: auto;
-    cursor: pointer;
-  }
-  &__left-arrow{
-    cursor: pointer;
-    z-index: 5;
-    position: absolute;
-    font-size: 3rem;
-    top: 270px;
-    left:20px;
-    color: #ff641a;
-    transition: all 0.5s linear;
-
-  }
-  &__right-arrow{
-    z-index: 5;
-    position: absolute;
-    font-size: 3rem;
-    top: 270px;
-    right: 20px;
-    color: #ff641a;
-    transition: all 0.5s linear;
-  }
-  &__right-arrow:hover{
-    transform: scale(1.2);
+  &__title{
+    margin: 25px;
+    padding-bottom: 15px;
     color: white;
-    transition: all 0.5s linear;
-  }
-  &__left-arrow:hover{
-    transform: scale(1.2);
-    color: white;
-    transition: all 0.5s linear;
-  }
-
-
-
-  &__title {
-    padding-top: 30px;
-    text-align: center;
-    margin-top: -0;
-    color: white;
-    font-size: 2rem;
-    max-width: 1236px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  &__box-title{
-    color: white;
-    font-size: 1.2rem;
-  }
-  &__img{
-
-    width: 90%;
-    margin: auto;
-    opacity: 0.85;
-    @mixin atSmall{
-      max-width: 60%;
-      @mixin atMedium{
-      height: 500px;
-
-        &--scale{
-          /*margin-top: -100px;*/
-          transform: scaleY(0.72) translateY(-100px);
-          transition: all 1s linear;
-          span{
-
-
-          }
-        }
-      }
-    }
-  }
-  &__button{
-
-    opacity: 0.8;
-    border-radius: 5px;
-    padding: 10px;
-    width: 49%;
-    display: inline-block;
-    background-color: white;
-    &--transformed{
-      @mixin atMedium{
-        transform: translateY(-146px);
-      }
-    }
-    a{
-      text-decoration: none;
-      color: black;
-      padding: 10px 30px;
-    }
-  }
-  &__button:hover{
-    opacity: 1;
-  }
-  &--hidden{
     @mixin atMedium{
-      display: none;
-      opacity: 0;
-      transition: all 3s linear;
-      transform: translateX(-300px);
+      font-size: 2.4rem;
+      margin: 50px;
     }
+
   }
-  &--active{
-    transform: translateX(0);
-    display: block;
-    opacity: 1;
-    transition: all 3s linear;
+  &__img-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
-}
-.projects__subtitle{
+  &__work{
+position: relative;
+    flex-basis: 50%;
+    img{
+      position: relative;
+      transform: scale(1);
+      transition: all .3s linear;
+    }
+    img:hover{
+    transform: scale(0.9);
+    transition: all 0.3s linear;
+    opacity: 0.5;
+    }
+    @mixin atMedium{
+      flex-basis: 50%;
+    }
+
+
+  }
+  &__button-wrap{
+
+  position: absolute;
+  top: 60%;
+  right: 50%;
+  transform: translate(50%,-50%);
+  display: flex;
+
+  }
+&__button{
+
+a{
+  color: black;
+  font-size: 1rem;
   span{
     display: inline-block;
-    padding: 10px 0;
-    width: 25%;
-    margin: 0 auto 15px;
-    background: white;
-    font-weight: bolder;
+
   }
 }
-.projects__description{
-  color: #ff641a;
-  font-weight: bold;
-  font-size: 1.2rem;
-  padding-top: 25px;
-
-  max-width: 370px;
-  margin: auto;
+}
 
 }

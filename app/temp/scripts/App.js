@@ -11097,116 +11097,37 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _ProjectsCarusele = __webpack_require__(3);
-
-var _ProjectsCarusele2 = _interopRequireDefault(_ProjectsCarusele);
-
-var _RevealOnScroll = __webpack_require__(4);
+var _RevealOnScroll = __webpack_require__(3);
 
 var _RevealOnScroll2 = _interopRequireDefault(_RevealOnScroll);
 
-var _NavigationFunctionality = __webpack_require__(5);
+var _NavigationFunctionality = __webpack_require__(4);
 
 var _NavigationFunctionality2 = _interopRequireDefault(_NavigationFunctionality);
 
-var _Button = __webpack_require__(7);
+var _Button = __webpack_require__(6);
 
 var _Button2 = _interopRequireDefault(_Button);
 
-var _Preloader = __webpack_require__(8);
+var _Preloader = __webpack_require__(7);
 
 var _Preloader2 = _interopRequireDefault(_Preloader);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // var mobileMenu = new MobileMenu();
-var projectsCarusele = new _ProjectsCarusele2.default();
+// var projectsCarusele = new ProjectsCarusele();
+
+
+// import ProjectsCarusele from "./modules/ProjectsCarusele"
 var smoothScroll = new _NavigationFunctionality2.default();
-new _RevealOnScroll2.default((0, _jquery2.default)('.reveal-item'), "60%");
+// new RevealOnScroll($('.reveal-item'),"60%");
 new _RevealOnScroll2.default((0, _jquery2.default)('.skill-icon'), "65%");
 
 var preloader = new _Preloader2.default();
 
 /***/ }),
 /* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _jquery = __webpack_require__(0);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var ProjectsCarusele = function () {
-  function ProjectsCarusele() {
-    _classCallCheck(this, ProjectsCarusele);
-
-    this.next = (0, _jquery2.default)('.projects__right-arrow');
-    this.prev = (0, _jquery2.default)('.projects__left-arrow');
-    this.current = (0, _jquery2.default)('.projects--active');
-    this.backToFirst = (0, _jquery2.default)('.backToFirst');
-    this.events();
-  }
-
-  _createClass(ProjectsCarusele, [{
-    key: 'events',
-    value: function events() {
-      this.next.click(this.nextProject.bind(this));
-      this.prev.click(this.prevProjects.bind(this));
-    }
-  }, {
-    key: 'nextProject',
-    value: function nextProject() {
-      var nextContent = this.current.next();
-      var prevContent = this.current.prev();
-      if (nextContent.length) {
-        this.current.removeClass('projects--active');
-        nextContent.addClass('projects--active');
-        this.current = nextContent;
-      } else {
-
-        this.current.removeClass('projects--active');
-        this.current = this.backToFirst = (0, _jquery2.default)('.backToFirst');
-        this.current.addClass('projects--active');
-        nextContent.addClass('projects--active');
-      }
-    }
-  }, {
-    key: 'prevProjects',
-    value: function prevProjects() {
-      var prevContent = this.current.prev();
-      var nextContent = this.current.next();
-      if (prevContent.length) {
-        this.current.removeClass('projects--active');
-        prevContent.addClass('projects--active');
-        this.current = prevContent;
-      } else {
-        this.current.removeClass('projects--active');
-        this.current = (0, _jquery2.default)('.backToLast');
-        this.current.addClass('projects--active');
-        prevContent.addClass('projects--active');
-      }
-    }
-  }]);
-
-  return ProjectsCarusele;
-}();
-
-exports.default = ProjectsCarusele;
-
-/***/ }),
-/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11268,7 +11189,7 @@ var RevealOnScroll = function () {
 exports.default = RevealOnScroll;
 
 /***/ }),
-/* 5 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11288,7 +11209,7 @@ var _noframework = __webpack_require__(1);
 
 var _noframework2 = _interopRequireDefault(_noframework);
 
-var _jquerySmoothScroll = __webpack_require__(6);
+var _jquerySmoothScroll = __webpack_require__(5);
 
 var _jquerySmoothScroll2 = _interopRequireDefault(_jquerySmoothScroll);
 
@@ -11359,7 +11280,7 @@ var NavigationFunctionality = function () {
 exports.default = NavigationFunctionality;
 
 /***/ }),
-/* 6 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -11726,7 +11647,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11772,7 +11693,7 @@ showHideButton.addEventListener('click', function () {
 }, hideMenu());
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
