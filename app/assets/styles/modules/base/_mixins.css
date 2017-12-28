@@ -15,7 +15,7 @@
   }
 }
 @define-mixin atExtraLarge{
-  @media(min-width: 1420px){
+  @media(min-width: 1980px){
     @mixin-content;
   }
 }

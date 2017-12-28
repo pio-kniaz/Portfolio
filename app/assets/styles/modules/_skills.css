@@ -13,6 +13,9 @@
   @mixin atSmall{
     padding: 60px 0;
   }
+  @mixin atLarge{
+    /* padding: 100px ; */
+  }
   &__container{
     max-width: 600px;
     margin: auto;
@@ -22,12 +25,17 @@
 
   }
     img{
-      margin: 20px 10px;
+      margin: 10px 10px 25px 10px;
       width: 16%;
       @mixin atSmall{
         display: inline-block;
-        width: 14%;
+        width: 10%;
+        margin: 10px 15px 75px 15px;
       }
+      @mixin atExtraLarge{
+        width: 15%;
+      }
+
     }
   }
   &__info{

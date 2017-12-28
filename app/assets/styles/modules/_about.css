@@ -10,6 +10,9 @@
     padding-top: 40px;
     padding-bottom: 60px;
   }
+  @mixin atLarge{
+    padding: 120px 0;
+  }
   &__title{
     font-size: 2rem;
 
@@ -20,6 +23,9 @@
     }
     @mixin atMedium{
       margin-bottom: 50px;
+    }
+    @mixin atExtraLarge{
+      font-size: 4.2rem;
     }
 
   }
@@ -53,5 +59,8 @@
   @mixin atMedium{
     padding: 10px 0;
   }
+  /* @mixin atExtraLarge{
+    font-size: 2.3rem;
+  } */
   }
 }

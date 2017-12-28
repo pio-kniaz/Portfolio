@@ -10,7 +10,12 @@
   @mixin atSmall{
     padding: 100px 0;
   }
-
+  @mixin atLarge{
+    padding: 130px 0;
+  }
+  @mixin atExtraLarge{
+    padding: 100px 0;
+  }
 
   &__inner{
 
@@ -21,20 +26,17 @@
     font-size: 2rem;
     color: white;
     @mixin atLarge{
-      font-size: 3.2rem;
+      font-size: 3.4rem;
+      padding: 50px 0;
     }
-    @mixin atExtraLarge{
-      padding: 25px 0;
 
-
-    }
   }
   &__description{
     margin: 25px;
     color: white;
     font-size: 1.1rem;
     @mixin atLarge{
-      font-size: 2rem;
+      font-size: 2.3rem;
     }
     @mixin atExtraLarge{
 
@@ -55,8 +57,8 @@
         font-size: 3.2rem;
       }
       @mixin atExtraLarge{
-        padding: 35px;
-      font-size: 4rem;
+        padding: 65px;
+      font-size: 6.4rem;
       }
   }
   &__icon:hover{
