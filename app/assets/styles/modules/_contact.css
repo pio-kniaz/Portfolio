@@ -5,16 +5,18 @@
   visibility: visible;
   z-index: 5;
   border-top: 7px solid #ff641a;
-  background: black;
-  min-height: 350px;
+  background: #161616;
+  background: linear-gradient(180deg, #161616, #414345);
+
+
   @mixin atSmall{
     padding: 100px 0;
   }
   @mixin atLarge{
-    padding: 130px 0;
+    /* padding: 130px 0; */
   }
   @mixin atExtraLarge{
-    padding: 100px 0;
+  padding: 135px 0;
   }
 
   &__inner{

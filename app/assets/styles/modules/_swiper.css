@@ -10,21 +10,29 @@
       margin: 0;
       text-align: center;
       font-size: 18px;
-      background: #fff;
+      background: none;
       display: flex;
       justify-content: center;
-
       align-items: center;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
       @mixin atMedium{
 
       }
     }
 .swiper-pagination{
-  @mixin atMedium{
-    display: none;
-  }
-  bottom: 0px!important;
+position: absolute;
+bottom: 0px;
+.swiper-pagination-bullet{
+
+  background: white;
+  padding: 7px;
 }
-/* .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
-  bottom: 0;
-} */
+  @mixin atMedium{
+
+    display: block;
+    color: white;
+
+  }
+  /* bottom: 0px!important; */
+}

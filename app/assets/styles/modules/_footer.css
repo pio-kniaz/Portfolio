@@ -2,6 +2,9 @@
 border-top: 7px solid #ff641a;
 background:white;
 height: 80px;
+@mixin atExtraLarge{
+  height: 120px;
+}
 &__passion{
   color: #ff641a;
 display: inline-block;
@@ -14,7 +17,8 @@ display: inline-block;
   font-weight: bold;
   letter-spacing: 2px;
   @mixin atExtraLarge{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    padding-top: 20px;
   }
 }
 small{

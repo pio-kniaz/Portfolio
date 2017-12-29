@@ -11122,6 +11122,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // var mobileMenu = new MobileMenu();
 // var projectsCarusele = new ProjectsCarusele();
 
+
+// own version carusele
 // import ProjectsCarusele from "./modules/ProjectsCarusele"
 var smoothScroll = new _NavigationFunctionality2.default();
 // new RevealOnScroll($('.reveal-item'),"60%");
@@ -11141,12 +11143,13 @@ var swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
   spaceBetween: 40,
   autoplay: {
-    delay: 2000,
+    delay: 3000,
     disableOnInteraction: false
   },
   pagination: {
     el: '.swiper-pagination',
     clickable: true
+
   },
   // Responsive breakpoints
   breakpoints: {
@@ -11155,13 +11158,13 @@ var swiper = new Swiper('.swiper-container', {
       slidesPerView: 1,
       spaceBetween: 0,
       autoplay: {
-        delay: 2000,
+        delay: 3000,
         disableOnInteraction: false
       }
     },
     // when window width is <= 640px
     800: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 0,
       autoplay: {
         delay: 2500,
