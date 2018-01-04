@@ -29,13 +29,24 @@
     opacity: 0.8;
     border-radius: 5px;
     padding: 10px;
-    width: 49%;
+    width: 48%;
     display: inline-block;
     background-color: white;
+    @mixin atLarge{
+      width: 49%;
+    }
     a {
       text-decoration: none;
       color: black;
+      padding: 0 25px;
+      @mixin atLarge{
+        padding: 0 30px;
+      }
+      @mixin atExtraLarge{
+        padding: 0 40px;
+      }
     }
+
   }
   &__button:hover {
     opacity: 1;
