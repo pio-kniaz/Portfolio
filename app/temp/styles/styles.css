@@ -4043,6 +4043,8 @@ background: rgba(230,230,230,1);
     width: 48%;
     display: inline-block;
     background-color: white;
+    text-decoration: none;
+    color: black;
 
   }
 
