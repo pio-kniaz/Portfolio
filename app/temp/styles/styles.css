@@ -3545,7 +3545,7 @@ border-bottom: 7px solid #ff641a;
 @media (min-width: 800px){
 
 .home__box{
-    min-height: 90vh
+    min-height: 100vh
 }
   }
 
@@ -3853,10 +3853,6 @@ background: rgba(230,230,230,1);
   }
 
 @media(min-width: 1010px){
-
-.about{
-    padding: 120px 0
-}
   }
 
 .about__title{
@@ -3891,6 +3887,7 @@ background: rgba(230,230,230,1);
   }
 
 .about__text{
+
     font-size: 1.2rem;
     width: 100%;
   }
@@ -3913,7 +3910,7 @@ background: rgba(230,230,230,1);
 @media(min-width: 1010px){
 
 .about__text{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     max-width: 900px;
     font-weight:500
   }
@@ -4001,8 +3998,6 @@ background: rgba(230,230,230,1);
 .projects {
   padding: 100px 0;
   background: #161616;
-    background: -webkit-gradient(linear, left top, left bottom, from(#161616), to(#414345));
-    background: linear-gradient(180deg, #161616, #414345);
 }
 
 .projects__title {
@@ -4014,6 +4009,13 @@ background: rgba(230,230,230,1);
     margin-left: auto;
     margin-right: auto;
     padding: 10px 0 50px 0;
+  }
+
+@media (min-width: 800px){
+
+.projects__title {
+      font-size: 2.4rem
+  }
   }
 
 .projects__box-title {
@@ -4102,6 +4104,7 @@ background: rgba(230,230,230,1);
   }
 
 .projects__subtitle span {
+    border-radius: 3px;
     display: inline-block;
     padding: 10px 0;
     width: 25%;
@@ -4120,7 +4123,7 @@ background: rgba(230,230,230,1);
 }
 
 .contact{
-  padding: 80px 0;
+  padding: 60px 0;
   display: block;
   visibility: visible;
   z-index: 5;
@@ -4133,7 +4136,7 @@ background: rgba(230,230,230,1);
 @media (min-width:530px) {
 
 .contact{
-    padding: 100px 0
+    /* padding: 100px 0; */
 }
   }
 
@@ -4147,7 +4150,7 @@ background: rgba(230,230,230,1);
 @media(min-width: 1980px){
 
 .contact{
-  padding: 135px 0
+  /* padding: 135px 0; */
 }
   }
 
@@ -4157,8 +4160,10 @@ background: rgba(230,230,230,1);
 
 .contact__title{
 
-    margin-top: 0;
+
+    margin-bottom: 40px;
     font-size: 2rem;
+
     color: white;
 
   }
@@ -4166,7 +4171,7 @@ background: rgba(230,230,230,1);
 @media(min-width: 1010px){
 
 .contact__title{
-      font-size: 3.4rem;
+      font-size: 2.4rem;
       padding: 50px 0
 
   }
@@ -4181,7 +4186,7 @@ background: rgba(230,230,230,1);
 @media(min-width: 1010px){
 
 .contact__description{
-      font-size: 2.3rem
+      font-size: 2rem
   }
   }
 
@@ -4319,7 +4324,7 @@ display: inline-block;
 .footer__title{
   margin-top: 30px;
   color: black;
-  font-size: 0.98rem;
+  font-size: 0.75rem;
   color: black;
   font-weight: bold;
   letter-spacing: 2px;
@@ -4341,7 +4346,7 @@ display: inline-block;
 }
 
 .skills{
-  
+
   border-top: 7px solid #ff641a;
   padding: 25px 0;
   margin: auto;
@@ -4353,10 +4358,17 @@ display: inline-block;
     margin-top: 15px;
   }
 
+@media (min-width:530px) {
+
+.skills__title{
+      margin-top: 5px
+  }
+  }
+
 @media(min-width: 1010px){
 
 .skills__title{
-      font-size: 3.2rem
+      font-size: 2.4rem
   }
   }
 
@@ -4388,27 +4400,59 @@ display: inline-block;
   }
 
 .skills__container img{
-      margin: 10px 10px 25px 10px;
-      width: 16%;
+      margin: 10px 10px 35px 10px;
+      width: 70%;
 
     }
 
 @media (min-width:530px) {
 
 .skills__container img{
-        display: inline-block;
-        width: 10%;
-        margin: 10px 15px 75px 15px
+
+    width: 60%
 
     }
   }
 
-@media(min-width: 1980px){
+@media (min-width: 800px){
 
 .skills__container img{
-        width: 15%
+        width: 40%
 
     }
+  }
+
+@media(min-width: 1010px){
+
+.skills__container img{
+        width: 45%
+
+    }
+  }
+
+.skills__list{
+    margin: 0;
+    padding: 0;
+  list-style-type: none;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+
+  }
+
+.skills__list li{
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
   }
 
 .skills__info{

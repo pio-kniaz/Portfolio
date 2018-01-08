@@ -3,6 +3,7 @@
 background: rgba(230,230,230,1);
   border-bottom: 7px solid #ff641a;
   padding: 20px 0;
+
   @mixin atSmall{
     padding: 40px 0;
   }
@@ -11,7 +12,7 @@ background: rgba(230,230,230,1);
     padding-bottom: 60px;
   }
   @mixin atLarge{
-    padding: 120px 0;
+
   }
   &__title{
     font-size: 2rem;
@@ -31,6 +32,7 @@ background: rgba(230,230,230,1);
 
   }
   &__text{
+
     font-size: 1.2rem;
     width: 100%;
     @mixin atSmall{
@@ -41,7 +43,7 @@ background: rgba(230,230,230,1);
     margin: auto;
   }
   @mixin atLarge{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     max-width: 900px;
     font-weight:500;
   }
