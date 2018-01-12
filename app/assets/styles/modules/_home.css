@@ -6,40 +6,30 @@ background-size: cover;
 background-position: center;
 border-bottom: 7px solid #ff641a;
 &__box{
-  min-height: 55vh;
+  min-height: 60vh;
   position: relative;
   background-color: black;
   opacity: 0.72;
+  @mixin atSmall{
+    min-height: 70vh;
+  }
   @mixin atMedium{
     min-height: 100vh;
-  }
-
-
-  home{
-    margin-bottom: -5px;
-    overflow: hidden;
-    opacity: 0.75;
-    width: 135%;
-    @mixin atSmall{
-      max-width: 100%;
-    }
-    @mixin atLarge{
-      min-width: 100%;
-    }
   }
 }
 &__content{
   max-width: 265px;
   position: absolute;
   left: 10%;
-  top:15%;
+  top:20%;
   transform: translate(-15%,-15%);
 
   @mixin atSmall{
-    top:40%;
+    top:30%;
     left: 25%;
   }
   @mixin atMedium{
+    top: 40%;
     max-width: 450px;
   }
 }
