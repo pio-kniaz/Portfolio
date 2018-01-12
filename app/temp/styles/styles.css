@@ -3582,7 +3582,7 @@ border-bottom: 7px solid #ff641a;
 @media (min-width:530px) {
 
 .home__content{
-    top:30%;
+    top:40%;
     left: 25%
 }
   }
@@ -3686,24 +3686,24 @@ border-bottom: 7px solid #ff641a;
         text-align: right;
         display: inline-block;
         width: 15%;
-        margin-right: 10px
+        margin-right: 15px
     }
   }
 
 .primary-nav__ul li a {
-
+        text-align: center;
         display: block;
         color: white;
         text-decoration: none;
         letter-spacing: 0.5px;
       }
 
-.primary-nav__ul li a.is-current-link{
-          color:#ff641a;
-          -webkit-transform:scale(1.09);
-                  transform:scale(1.09);
-          font-weight: bold;
-        }
+.primary-nav__ul li a:hover{
+        font-weight: bold;
+        color: #ff641a;
+        -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+      }
 
 .primary-nav__ul li:last-child{
       margin-bottom: 5px;

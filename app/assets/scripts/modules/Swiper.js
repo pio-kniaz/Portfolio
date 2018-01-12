@@ -1,4 +1,3 @@
-
 var swiper = new Swiper('.swiper-container', {
   // Default parameters
   slidesPerView: 1,
@@ -8,15 +7,15 @@ var swiper = new Swiper('.swiper-container', {
     disableOnInteraction: false,
   },
   pagination: {
-       el: '.swiper-pagination',
-       clickable: true,
-    
-     },
+    el: '.swiper-pagination',
+    clickable: true,
+
+  },
   // Responsive breakpoints
   breakpoints: {
     // when window width is <= 320px
     530: {
-      slidesPerView:1,
+      slidesPerView: 1,
       spaceBetween: 0,
       autoplay: {
         delay: 3000,
@@ -26,7 +25,7 @@ var swiper = new Swiper('.swiper-container', {
     // when window width is <= 640px
     800: {
       slidesPerView: 1,
-      spaceBetween:0,
+      spaceBetween: 0,
       autoplay: {
         delay: 2500,
         disableOnInteraction: false,

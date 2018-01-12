@@ -17,8 +17,6 @@ background: rgba(230,230,230,1);
   &__title{
     font-size: 2rem;
       color: #ff641a;
-
-
     @mixin atSmall{
       font-size: 2.4rem;
       margin-bottom: 35px;

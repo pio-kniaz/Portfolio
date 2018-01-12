@@ -35,19 +35,19 @@
         text-align: right;
         display: inline-block;
         width: 15%;
-        margin-right: 10px;
+        margin-right: 15px;
       }
       a {
-
+        text-align: center;
         display: block;
         color: white;
         text-decoration: none;
         letter-spacing: 0.5px;
-        &.is-current-link{
-          color:#ff641a;
-          transform:scale(1.09);
-          font-weight: bold;
-        }
+      }
+      a:hover{
+        font-weight: bold;
+        color: #ff641a;
+        transform: scale(1.05);
       }
     }
     li:last-child{

@@ -11126,7 +11126,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // own version carusele
 // import ProjectsCarusele from "./modules/ProjectsCarusele"
 var smoothScroll = new _NavigationFunctionality2.default();
-// new RevealOnScroll($('.reveal-item'),"60%");
+new _RevealOnScroll2.default((0, _jquery2.default)('.reveal-item'), "60%");
 new _RevealOnScroll2.default((0, _jquery2.default)('.skill-icon'), "65%");
 
 var preloader = new _Preloader2.default();
@@ -11269,56 +11269,14 @@ var NavigationFunctionality = function () {
   function NavigationFunctionality() {
     _classCallCheck(this, NavigationFunctionality);
 
-    this.lazyImages = (0, _jquery2.default)('.lazyload');
-    this.pageSections = (0, _jquery2.default)('.page-section');
     this.headerLinks = (0, _jquery2.default)(".primary-nav a");
-    this.createPageSectionWaypoints();
     this.addSmoothScrolling();
-    this.refreshWaypoints();
   }
 
   _createClass(NavigationFunctionality, [{
-    key: 'refreshWaypoints',
-    value: function refreshWaypoints() {
-      this.lazyImages.on('load', function () {
-        Waypoint.refreshAll();
-      });
-    }
-  }, {
     key: 'addSmoothScrolling',
     value: function addSmoothScrolling() {
       this.headerLinks.smoothScroll();
-    }
-  }, {
-    key: 'createPageSectionWaypoints',
-    value: function createPageSectionWaypoints() {
-      var that = this;
-      this.pageSections.each(function () {
-        var currentPageSection = this;
-        new Waypoint({
-          element: currentPageSection,
-          handler: function handler(direction) {
-            if (direction == "down") {
-              var matchingHeaderLink = currentPageSection.getAttribute('data-matching-link');
-              that.headerLinks.removeClass('is-current-link');
-              (0, _jquery2.default)(matchingHeaderLink).addClass('is-current-link');
-            }
-          },
-          offset: "18%"
-        });
-
-        new Waypoint({
-          element: currentPageSection,
-          handler: function handler(direction) {
-            if (direction == "up") {
-              var matchingHeaderLink = currentPageSection.getAttribute('data-matching-link');
-              that.headerLinks.removeClass('is-current-link');
-              (0, _jquery2.default)(matchingHeaderLink).addClass('is-current-link');
-            }
-          },
-          offset: "-50%"
-        });
-      });
     }
   }]);
 
@@ -11767,7 +11725,6 @@ var Preloader = function () {
 
     this.window = (0, _jquery2.default)(document);
     this.preloader = (0, _jquery2.default)('.preload');
-
     this.events();
   }
 
@@ -11782,8 +11739,7 @@ var Preloader = function () {
       var that = this;
       setTimeout(function () {
         // console.log(this);
-        console.log(that);
-
+        // console.log(that);
         that.preloader.removeClass('show-preloader');
       }, 2400);
     }
