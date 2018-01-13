@@ -1,7 +1,7 @@
 .shape1 {
   overflow: hidden;
   position: absolute;
-  bottom: -10px;
+  top: -160px;
   right: 0;
   width: 105%;
   height: 30vh;
@@ -9,6 +9,10 @@
   border-top-left-radius: 100%;
   z-index: 0;
   opacity: 1;
+  @mixin atSmall {
+    width: 115%;
+    height: 30vh;
+  }
 }
 
 .shape2 {

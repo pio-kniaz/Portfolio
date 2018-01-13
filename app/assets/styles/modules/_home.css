@@ -1,6 +1,6 @@
 .home{
   background:#000 url("../../assets/images/stars.png") repeat top center;
-  animation:move-twink-back 500s linear infinite;
+  /* animation:move-twink-back 500s linear infinite; */
   min-height: 100vh;
   position: relative;
 
@@ -56,10 +56,8 @@
 @keyframes move-twink-back {
 
     from {
-will-change: transform;
       background-position:0 0;}
     to {
-will-change: transform;
       background-position:-10000px 5000px;}
 }
 

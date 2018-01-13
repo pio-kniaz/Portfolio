@@ -3527,8 +3527,7 @@ img{
 
 .home{
   background:#000 url("../../assets/images/stars.png") repeat top center;
-  -webkit-animation:move-twink-back 500s linear infinite;
-          animation:move-twink-back 500s linear infinite;
+  /* animation:move-twink-back 500s linear infinite; */
   min-height: 100vh;
   position: relative;
 }
@@ -3614,20 +3613,16 @@ img{
 @-webkit-keyframes move-twink-back {
 
     from {
-will-change: transform;
       background-position:0 0;}
     to {
-will-change: transform;
       background-position:-10000px 5000px;}
 }
 
 @keyframes move-twink-back {
 
     from {
-will-change: transform;
       background-position:0 0;}
     to {
-will-change: transform;
       background-position:-10000px 5000px;}
 }
 
@@ -3843,6 +3838,7 @@ will-change: transform;
       }
 
 .about{
+  position: relative;
 padding-bottom: 25px;
 background: white;
   border-bottom: 7px solid #49516F;
@@ -4693,7 +4689,7 @@ display: inline-block;
 .shape1 {
   overflow: hidden;
   position: absolute;
-  bottom: -10px;
+  top: -160px;
   right: 0;
   width: 105%;
   height: 30vh;
@@ -4702,6 +4698,14 @@ display: inline-block;
   z-index: 0;
   opacity: 1;
 }
+
+@media (min-width:530px) {
+
+.shape1 {
+    width: 115%;
+    height: 30vh
+}
+  }
 
 .shape2 {
   overflow: hidden;
