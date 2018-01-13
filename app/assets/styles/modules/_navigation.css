@@ -1,5 +1,4 @@
 .primary-nav {
-
   &__ul {
     display: block;
     transform: translate(0);
@@ -14,9 +13,7 @@
     right: 0;
     background: white;
     opacity: 0.96;
-
-
-    @mixin atMedium{
+    @mixin atMedium {
       display: block;
       position: relative;
       background: none;
@@ -24,7 +21,6 @@
       transform: translate(0);
       transition: all 0.3s linear;
     }
-
     li {
       margin-top: 5px;
       padding-top: 8px;
@@ -40,20 +36,21 @@
       a {
         text-align: center;
         display: block;
-        color: black;
+        color: rgb(48, 79, 144);
         text-decoration: none;
         letter-spacing: 0.5px;
-        @mixin atMedium{
+        @mixin atMedium {
+          font-weight: bold;
           color: rgb(48, 79, 144);
         }
       }
-      a:hover{
+      a:hover {
         font-weight: bold;
-        color: rgb(48, 79, 144);
+        color: rgb(31, 41, 61);
         transform: scale(1.05);
       }
     }
-    li:last-child{
+    li:last-child {
       margin-bottom: 5px;
     }
     &--hidden {
@@ -68,6 +65,5 @@
         transition: all 0.3s linear;
       }
     }
-
   }
 }

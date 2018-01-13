@@ -1,62 +1,55 @@
-
-.contact{
+.contact {
   padding: 50px 0;
   display: block;
   visibility: visible;
   z-index: 5;
   border-top: 7px solid #49516F;
-  background:#000 url("../../assets/images/stars.png") repeat top center;
-  animation:move-twink-back 500s linear infinite;
-
-  &__inner{
-
-  }
-  &__title{
+  background: #000 url("../../assets/images/stars.png") repeat top center;
+  animation: move-twink-back 500s linear infinite;
+  &__inner {}
+  &__title {
     margin-bottom: 20px;
     font-size: 2rem;
     color: white;
-    @mixin atLarge{
+    @mixin atLarge {
       font-size: 2.4rem;
       padding: 50px 0;
     }
-
   }
-  &__description{
+  &__description {
     margin: 25px;
     color: white;
     font-size: 1.1rem;
-    @mixin atLarge{
+    @mixin atLarge {
       font-size: 2rem;
     }
-    @mixin atExtraLarge{
-
-    }
+    @mixin atExtraLarge {}
   }
 }
-.social-icons{
 
-  &__icon{
+.social-icons {
+  &__icon {
     padding: 15px;
     text-decoration: none;
     color: white;
     font-size: 2.2rem;
     transform: scale(1);
     display: inline-block;
-      transition: all .3s linear;
-      @mixin atLarge{
-        font-size: 3.2rem;
-      }
-      @mixin atExtraLarge{
-        padding: 65px;
+    transition: all .3s linear;
+    @mixin atLarge {
+      font-size: 3.2rem;
+    }
+    @mixin atExtraLarge {
+      padding: 65px;
       font-size: 6.4rem;
-      }
+    }
   }
-  &__icon:hover{
+  &__icon:hover {
     transition: all .3s linear;
     color: #49516F;
     transform: scale(1.2);
   }
-  &__mail{
+  &__mail {
     color: #fff;
     font-size: 1.5rem;
     max-width: 300px;
@@ -64,24 +57,23 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
-   animation: jiggle 2s infinite ease-in;
-    @mixin atExtraLarge{
+    animation: jiggle 2s infinite ease-in;
+    @mixin atExtraLarge {
       padding: 25px 0;
       font-size: 2rem;
       margin: 0 auto;
     }
   }
-  &__mail:hover{
+  &__mail:hover {
     color: #49516F;
-     animation-play-state: paused;
-
+    animation-play-state: paused;
   }
-
 }
+
 @keyframes jiggle {
   45%, 65% {
     transform: scale(1.0, 1.0);
-    color:#ededed
+    color: #ededed
   }
   50% {
     color: #49516F;

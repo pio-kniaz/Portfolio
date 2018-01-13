@@ -11128,6 +11128,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var smoothScroll = new _NavigationFunctionality2.default();
 new _RevealOnScroll2.default((0, _jquery2.default)('.reveal-item'), "60%");
 new _RevealOnScroll2.default((0, _jquery2.default)('.skill-icon'), "65%");
+new _RevealOnScroll2.default((0, _jquery2.default)('.about__title'), "69%");
+new _RevealOnScroll2.default((0, _jquery2.default)('.about__text'), "69%");
+new _RevealOnScroll2.default((0, _jquery2.default)('.contact__title'), "60%");
 
 var preloader = new _Preloader2.default();
 

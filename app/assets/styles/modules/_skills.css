@@ -1,77 +1,67 @@
-.skills{
-
+.skills {
   border-top: 7px solid #49516F;
   padding: 40px 0;
   margin: auto;
-  &__title{
+  &__title {
     color: #49516F;
     font-size: 2rem;
     margin-top: 15px;
-    @mixin atSmall{
+    @mixin atSmall {
       margin: 15px 0 45px 0;
     }
-    @mixin atLarge{
+    @mixin atLarge {
       font-size: 2.4rem;
     }
   }
-  @mixin atSmall{
+  @mixin atSmall {
     padding: 60px 0;
   }
-  @mixin atLarge{
-
-  }
-  &__container{
+  &__container {
     padding: 10px 0;
     max-width: 600px;
     margin: auto;
-  @mixin atMedium{
-    max-width: 1000px;
-
-  }
-    img{
+    @mixin atMedium {
+      max-width: 1000px;
+    }
+    img {
       margin: 10px 10px 35px 10px;
       width: 70%;
-      @mixin atSmall{
-
-    width: 60%;
+      @mixin atSmall {
+        width: 60%;
       }
-      @mixin atMedium{
+      @mixin atMedium {
         width: 40%;
       }
-      @mixin atLarge{
+      @mixin atLarge {
         width: 45%;
       }
-
     }
   }
-  &__list{
+  &__list {
     margin: 0;
     padding: 0;
-  list-style-type: none;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  li{
-    flex-basis: 20%;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    li {
+      flex-basis: 20%;
+    }
   }
-
-  }
-  &__info{
-
-      display: block;
-      color: black;
-      text-decoration: none;
-      background-color: #ff641a;
-      max-width: 150px;
-      margin: 15px auto;
-      padding: 10px 15px;
-      font-weight: bold;
-      border-radius: 10px;
-      @mixin atSmall{
-        margin-top: 40px;
-      }
-
+  &__info {
+    display: block;
+    color: black;
+    text-decoration: none;
+    background-color: #ff641a;
+    max-width: 150px;
+    margin: 15px auto;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    @mixin atSmall {
+      margin-top: 40px;
+    }
   }
 }

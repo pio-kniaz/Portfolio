@@ -1,14 +1,14 @@
 .home{
   background:#000 url("../../assets/images/stars.png") repeat top center;
   animation:move-twink-back 500s linear infinite;
-&__box{
   min-height: 100vh;
   position: relative;
-  opacity: 0.12;
 
-}
 &__content{
+  animation:fadeIn .9s forwards;
+  animation-delay: 2.5s;
   max-width: 265px;
+  opacity: 0;
   position: absolute;
   left: 20%;
   top:30%;
@@ -54,6 +54,17 @@
 
 /* Animatioon */
 @keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
+
+    from {
+will-change: transform;
+      background-position:0 0;}
+    to {
+will-change: transform;
+      background-position:-10000px 5000px;}
+}
+
+@keyframes fadeIn {
+  100%{
+    opacity: 1;
+  }
 }
