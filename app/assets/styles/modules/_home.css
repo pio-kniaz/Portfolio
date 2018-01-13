@@ -1,27 +1,17 @@
 .home{
-
-background-image: url("../../assets/images/computer.jpeg");
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-border-bottom: 7px solid #ff641a;
+  background:#000 url("../../assets/images/stars.png") repeat top center;
+  animation:move-twink-back 500s linear infinite;
 &__box{
-  min-height: 60vh;
+  min-height: 100vh;
   position: relative;
-  background-color: black;
-  opacity: 0.72;
-  @mixin atSmall{
-    min-height: 70vh;
-  }
-  @mixin atMedium{
-    min-height: 100vh;
-  }
+  opacity: 0.12;
+
 }
 &__content{
   max-width: 265px;
   position: absolute;
-  left: 10%;
-  top:20%;
+  left: 20%;
+  top:30%;
   transform: translate(-15%,-15%);
 
   @mixin atSmall{
@@ -29,8 +19,9 @@ border-bottom: 7px solid #ff641a;
     left: 25%;
   }
   @mixin atMedium{
-    top: 40%;
-    max-width: 450px;
+    top: 25%;
+    left: 40%;
+    max-width: 550px;
   }
 }
 &__title{
@@ -38,19 +29,20 @@ border-bottom: 7px solid #ff641a;
   color: white;
   span{
     display: inline-block;
-    color: #ff641a;
+    color: #49516F;
 
   }
   @mixin atSmall{
     font-size: 2rem;
   }
   @mixin atMedium{
-    font-size: 3rem;
+    font-size: 2.2rem;
   }
 }
 &__subtitle{
+  font-weight: bold;
   font-size: 1rem;
-  color: white;
+  color: #49516F;
   @mixin atSmall{
     font-size: 1.5rem;
   }
@@ -58,4 +50,10 @@ border-bottom: 7px solid #ff641a;
     font-size: 2rem;
   }
 }
+}
+
+/* Animatioon */
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
 }

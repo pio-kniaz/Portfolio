@@ -1,8 +1,13 @@
 .projects {
+  position: relative;
   padding: 100px 0;
-  background: #161616;
+  background:#000 url("../../assets/images/stars.png") repeat top center;
+  background-size: 200%;
+    /* animation:move-twink-back 500s linear infinite; */
+  /* opacity: 0.6; */
 
   &__title {
+
     margin-top: -20px;
     text-align: center;
     color: white;
@@ -17,6 +22,7 @@
   }
   &__box-title {
     color: white;
+    font-weight: bold;
     font-size: 1.2rem;
   }
   &__img {
@@ -72,6 +78,7 @@
 }
 
 .projects__subtitle {
+  color: #49516F;
   span {
     border-radius: 3px;
     display: inline-block;
@@ -84,7 +91,7 @@
 }
 
 .projects__description {
-  color: #ff641a;
+  color: white;
   font-weight: bold;
   font-size: 1.2rem;
   padding-top: 25px;

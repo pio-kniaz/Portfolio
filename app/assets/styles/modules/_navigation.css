@@ -12,7 +12,7 @@
     top: 0;
     left: 0;
     right: 0;
-    background: black;
+    background: white;
     opacity: 0.96;
 
 
@@ -40,9 +40,12 @@
       a {
         text-align: center;
         display: block;
-        color: white;
+        color: black;
         text-decoration: none;
         letter-spacing: 0.5px;
+        @mixin atMedium{
+          color: rgb(48, 79, 144);
+        }
       }
       a:hover{
         font-weight: bold;

@@ -1,10 +1,10 @@
 .skills{
 
-  border-top: 7px solid #ff641a;
+  border-top: 7px solid #49516F;
   padding: 25px 0;
   margin: auto;
   &__title{
-    color: #ff641a;
+    color: #49516F;
     font-size: 2rem;
     margin-top: 15px;
     @mixin atSmall{
@@ -18,7 +18,7 @@
     padding: 60px 0;
   }
   @mixin atLarge{
-    /* padding: 100px ; */
+
   }
   &__container{
     max-width: 600px;

@@ -1,5 +1,5 @@
 .swiper-container {
-
+      /* opacity: 0.2; */
       display: flex;
       justify-content: space-between;
       /* @mixin atMedium{
