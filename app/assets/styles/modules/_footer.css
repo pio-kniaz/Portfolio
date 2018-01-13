@@ -1,12 +1,12 @@
 .footer{
-border-top: 7px solid #ff641a;
+border-top: 7px solid #49516F;
 background:white;
 height: 80px;
 @mixin atExtraLarge{
   height: 120px;
 }
 &__passion{
-  color: #ff641a;
+  color: #49516F;
 display: inline-block;
 }
 &__title{

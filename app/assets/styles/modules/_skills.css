@@ -1,14 +1,14 @@
 .skills{
 
   border-top: 7px solid #49516F;
-  padding: 25px 0;
+  padding: 40px 0;
   margin: auto;
   &__title{
     color: #49516F;
     font-size: 2rem;
     margin-top: 15px;
     @mixin atSmall{
-      margin-top: 5px;
+      margin: 15px 0 45px 0;
     }
     @mixin atLarge{
       font-size: 2.4rem;
@@ -21,11 +21,11 @@
 
   }
   &__container{
+    padding: 10px 0;
     max-width: 600px;
     margin: auto;
   @mixin atMedium{
     max-width: 1000px;
-    padding: 45px 0;
 
   }
     img{

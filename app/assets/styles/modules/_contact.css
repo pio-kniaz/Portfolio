@@ -1,33 +1,19 @@
 
 .contact{
-  padding: 60px 0;
+  padding: 50px 0;
   display: block;
   visibility: visible;
   z-index: 5;
-  border-top: 7px solid #ff641a;
-  background: #161616;
-  background: linear-gradient(180deg, #161616, #414345);
-
-
-  @mixin atSmall{
-    /* padding: 100px 0; */
-  }
-  @mixin atLarge{
-    /* padding: 130px 0; */
-  }
-  @mixin atExtraLarge{
-  /* padding: 135px 0; */
-  }
+  border-top: 7px solid #49516F;
+  background:#000 url("../../assets/images/stars.png") repeat top center;
+  animation:move-twink-back 500s linear infinite;
 
   &__inner{
 
   }
   &__title{
-
-
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-size: 2rem;
-
     color: white;
     @mixin atLarge{
       font-size: 2.4rem;
@@ -67,7 +53,7 @@
   }
   &__icon:hover{
     transition: all .3s linear;
-    color: #ff641af2;;
+    color: #49516F;
     transform: scale(1.2);
   }
   &__mail{
@@ -86,7 +72,7 @@
     }
   }
   &__mail:hover{
-    color: #ff641af2;
+    color: #49516F;
      animation-play-state: paused;
 
   }
@@ -98,15 +84,15 @@
     color:#ededed
   }
   50% {
-    color: #f2b991;
+    color: #49516F;
     transform: scale(1.1, 0.9);
   }
   55% {
     transform: scale(0.9, 1.1) translate(0, -5px);
-    color: #f8711e;
+    color: #ededed
   }
   60% {
     transform: scale(1.0, 1.0) translate(0, -5px);
-    color: #ff641af2;
+    color: #49516F;
   }
 }

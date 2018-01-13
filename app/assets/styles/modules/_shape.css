@@ -1,7 +1,7 @@
 .shape1{
   overflow: hidden;
   position: absolute;
-bottom:  0;
+bottom:  -10px;
   right: 0;
   width: 105%;
   height:30vh;
@@ -9,14 +9,14 @@ bottom:  0;
   border-top-left-radius: 100%;
   z-index: 0;
   opacity: 1;
-
 /* animation: swell 1.9s ease 1 forwards;
 animation-delay: 2.4s; */
 }
 .shape2{
+
   overflow: hidden;
   position: absolute;
-bottom:  0;
+bottom:  -10px;
   right: 0;
   width: 95%;
   height:42vh;
@@ -31,7 +31,7 @@ background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(181,183,222,1
 .shape3{
   overflow: hidden;
   position: absolute;
-bottom:  0;
+bottom:  -10px;
   right: 0;
   width: 75%;
   height:50vh;
