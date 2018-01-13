@@ -1,0 +1,50 @@
+.stars__item{
+  color: white;
+  position: absolute;
+animation:shine 3s linear infinite
+}
+.stars__item--1{
+  font-size: 0.65rem;
+  top: 15%;
+  left: 5%;
+  animation-delay: 1s;
+}
+.stars__item--2{
+  font-size: 0.9rem;
+  top: 30%;
+  left: 15%;
+  animation-delay: 1.2s;
+}
+.stars__item--3{
+  top: 50%;
+  left: 45%;
+  animation-delay: 1.2s;
+}
+.stars__item--4{
+font-size: 0.6rem;
+  top: 20%;
+  right: 15%;
+  animation-delay: 1s;
+}
+.stars__item--5{font-size: 1.6rem;
+  top: 65%;
+  right: 15%;
+  animation-delay: 0.5s;
+}
+.stars__item--6{
+  font-size: 1.1rem;
+  top: 70%;
+  left: 5%;
+  animation-delay: 0.7s;
+}
+
+
+@keyframes shine {
+  20%{ color: black}
+  60% {
+    color: rgb(244, 241, 242)
+  }
+  100% {
+    color: white;
+  }
+}
