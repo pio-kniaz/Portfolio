@@ -3533,8 +3533,8 @@ img{
 }
 
 .home__content{
-  -webkit-animation:fadeIn .9s forwards;
-          animation:fadeIn .9s forwards;
+  -webkit-animation:fadeIn 1.2s forwards;
+          animation:fadeIn 1.2s forwards;
   -webkit-animation-delay: 2.5s;
           animation-delay: 2.5s;
   max-width: 265px;
@@ -3653,7 +3653,7 @@ img{
     left: 0;
     right: 0;
     background: white;
-    opacity: 0.96;
+    opacity: 1;
   }
 
 @media (min-width: 800px){
@@ -3838,6 +3838,7 @@ img{
       }
 
 .about{
+
   position: relative;
 padding-bottom: 25px;
 background: white;
@@ -3947,6 +3948,19 @@ color:black;
     padding: 10px 0
   }
   }
+
+/* .about::before{
+  content: "";
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: -100px;
+  padding-top: 50px;
+
+  background-color: white;
+border-top-left-radius: 100%;
+overflow: hidden;
+} */
 
 .row::after{
         content:"";
@@ -4689,23 +4703,15 @@ display: inline-block;
 .shape1 {
   overflow: hidden;
   position: absolute;
-  top: -160px;
+  top: -100px;
   right: 0;
-  width: 105%;
-  height: 30vh;
+  width: 120%;
+  height: 150px;
   background: white;
   border-top-left-radius: 100%;
   z-index: 0;
   opacity: 1;
 }
-
-@media (min-width:530px) {
-
-.shape1 {
-    width: 115%;
-    height: 30vh
-}
-  }
 
 .shape2 {
   overflow: hidden;
@@ -4714,6 +4720,7 @@ display: inline-block;
   right: 0;
   width: 95%;
   height: 42vh;
+  /* height: 300px; */
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 1)), color-stop(28%, rgba(181, 183, 222, 1)), color-stop(51%, rgba(181, 183, 222, 1)), color-stop(83%, rgba(194, 142, 194, 1)), color-stop(93%, rgba(194, 142, 194, 1)), color-stop(98%, rgba(194, 142, 194, 1)), to(rgba(194, 142, 194, 1)));
   background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(181, 183, 222, 1) 28%, rgba(181, 183, 222, 1) 51%, rgba(194, 142, 194, 1) 83%, rgba(194, 142, 194, 1) 93%, rgba(194, 142, 194, 1) 98%, rgba(194, 142, 194, 1) 100%);
   border-top-left-radius: 100%;
@@ -4736,6 +4743,7 @@ display: inline-block;
   right: 0;
   width: 75%;
   height: 50vh;
+  /* height: 400px; */
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 1)), color-stop(28%, rgba(181, 183, 222, 1)), color-stop(51%, rgba(181, 183, 222, 1)), color-stop(83%, rgba(194, 142, 194, 1)), color-stop(93%, rgba(194, 142, 194, 1)), color-stop(98%, rgba(194, 142, 194, 1)), to(rgba(194, 142, 194, 1)));
   background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(181, 183, 222, 1) 28%, rgba(181, 183, 222, 1) 51%, rgba(194, 142, 194, 1) 83%, rgba(194, 142, 194, 1) 93%, rgba(194, 142, 194, 1) 98%, rgba(194, 142, 194, 1) 100%);
   border-top-left-radius: 100%;
