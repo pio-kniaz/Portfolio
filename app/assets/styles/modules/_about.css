@@ -14,7 +14,7 @@ background: white;
 
   }
   &__title{
-    z-index: 300;
+    z-index: 2;
     font-size: 2rem;
       color: #49516F;
     @mixin atSmall{
